@@ -27,6 +27,36 @@
 		3BA213151422F403003CF839 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BA213131422F403003CF839 /* InfoPlist.strings */; };
 		3BA213181422F403003CF839 /* EG_TDTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 3BA213171422F403003CF839 /* EG_TDTests.h */; };
 		3BA2131A1422F403003CF839 /* EG_TDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA213191422F403003CF839 /* EG_TDTests.m */; };
+		3BA213471422F657003CF839 /* INFSmartFoxBuddy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA213251422F657003CF839 /* INFSmartFoxBuddy.m */; };
+		3BA213481422F657003CF839 /* INFSmartFoxRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA213261422F657003CF839 /* INFSmartFoxRoom.m */; };
+		3BA213491422F657003CF839 /* INFSmartFoxRoomCreateParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA213271422F657003CF839 /* INFSmartFoxRoomCreateParams.m */; };
+		3BA2134A1422F657003CF839 /* INFSmartFoxRoomVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA213281422F657003CF839 /* INFSmartFoxRoomVariable.m */; };
+		3BA2134B1422F657003CF839 /* INFSmartFoxUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA213291422F657003CF839 /* INFSmartFoxUser.m */; };
+		3BA2134C1422F657003CF839 /* INFSmartFoxZone.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2132A1422F657003CF839 /* INFSmartFoxZone.m */; };
+		3BA2134D1422F657003CF839 /* INFSmartFoxExtHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2132C1422F657003CF839 /* INFSmartFoxExtHandler.m */; };
+		3BA2134E1422F657003CF839 /* INFSmartFoxSFSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2132D1422F657003CF839 /* INFSmartFoxSFSEvent.m */; };
+		3BA2134F1422F657003CF839 /* INFSmartFoxSysHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2132E1422F657003CF839 /* INFSmartFoxSysHandler.m */; };
+		3BA213501422F657003CF839 /* SFSHttpConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA213301422F657003CF839 /* SFSHttpConnection.m */; };
+		3BA213511422F657003CF839 /* INFSmartFoxiPhoneClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA213311422F657003CF839 /* INFSmartFoxiPhoneClient.m */; };
+		3BA213521422F657003CF839 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA213331422F657003CF839 /* NSObject+SBJSON.m */; };
+		3BA213531422F657003CF839 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA213341422F657003CF839 /* NSString+SBJSON.m */; };
+		3BA213541422F657003CF839 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA213351422F657003CF839 /* SBJSON.m */; };
+		3BA213551422F657003CF839 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA213361422F657003CF839 /* SBJsonBase.m */; };
+		3BA213561422F657003CF839 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA213371422F657003CF839 /* SBJsonParser.m */; };
+		3BA213571422F657003CF839 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA213381422F657003CF839 /* SBJsonWriter.m */; };
+		3BA213581422F657003CF839 /* NSObjectAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2133A1422F657003CF839 /* NSObjectAddition.m */; };
+		3BA213591422F657003CF839 /* NStreamAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2133B1422F657003CF839 /* NStreamAddition.m */; };
+		3BA2135A1422F657003CF839 /* CXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2133D1422F657003CF839 /* CXMLDocument.m */; };
+		3BA2135B1422F657003CF839 /* CXMLDocument_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2133E1422F657003CF839 /* CXMLDocument_PrivateExtensions.m */; };
+		3BA2135C1422F657003CF839 /* CXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2133F1422F657003CF839 /* CXMLElement.m */; };
+		3BA2135D1422F657003CF839 /* CXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA213401422F657003CF839 /* CXMLNode.m */; };
+		3BA2135E1422F657003CF839 /* CXMLNode_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA213411422F657003CF839 /* CXMLNode_PrivateExtensions.m */; };
+		3BA2135F1422F657003CF839 /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA213421422F657003CF839 /* CXMLNode_XPathExtensions.m */; };
+		3BA213601422F657003CF839 /* INFSendBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA213441422F657003CF839 /* INFSendBuffer.m */; };
+		3BA213611422F657003CF839 /* INFSmartFoxEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA213451422F657003CF839 /* INFSmartFoxEntities.m */; };
+		3BA213621422F657003CF839 /* INFSmartFoxObjectSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA213461422F657003CF839 /* INFSmartFoxObjectSerializer.m */; };
+		3BA2138C1422F69B003CF839 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA2138B1422F69B003CF839 /* libxml2.dylib */; };
+		3BA2138E1422F6B7003CF839 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA2138D1422F6B7003CF839 /* CFNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +96,68 @@
 		3BA213161422F403003CF839 /* EG-TDTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EG-TDTests-Prefix.pch"; sourceTree = "<group>"; };
 		3BA213171422F403003CF839 /* EG_TDTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EG_TDTests.h; sourceTree = "<group>"; };
 		3BA213191422F403003CF839 /* EG_TDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EG_TDTests.m; sourceTree = "<group>"; };
+		3BA213251422F657003CF839 /* INFSmartFoxBuddy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INFSmartFoxBuddy.m; sourceTree = "<group>"; };
+		3BA213261422F657003CF839 /* INFSmartFoxRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INFSmartFoxRoom.m; sourceTree = "<group>"; };
+		3BA213271422F657003CF839 /* INFSmartFoxRoomCreateParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INFSmartFoxRoomCreateParams.m; sourceTree = "<group>"; };
+		3BA213281422F657003CF839 /* INFSmartFoxRoomVariable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INFSmartFoxRoomVariable.m; sourceTree = "<group>"; };
+		3BA213291422F657003CF839 /* INFSmartFoxUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INFSmartFoxUser.m; sourceTree = "<group>"; };
+		3BA2132A1422F657003CF839 /* INFSmartFoxZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INFSmartFoxZone.m; sourceTree = "<group>"; };
+		3BA2132C1422F657003CF839 /* INFSmartFoxExtHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INFSmartFoxExtHandler.m; sourceTree = "<group>"; };
+		3BA2132D1422F657003CF839 /* INFSmartFoxSFSEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INFSmartFoxSFSEvent.m; sourceTree = "<group>"; };
+		3BA2132E1422F657003CF839 /* INFSmartFoxSysHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INFSmartFoxSysHandler.m; sourceTree = "<group>"; };
+		3BA213301422F657003CF839 /* SFSHttpConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSHttpConnection.m; sourceTree = "<group>"; };
+		3BA213311422F657003CF839 /* INFSmartFoxiPhoneClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INFSmartFoxiPhoneClient.m; sourceTree = "<group>"; };
+		3BA213331422F657003CF839 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		3BA213341422F657003CF839 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		3BA213351422F657003CF839 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		3BA213361422F657003CF839 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		3BA213371422F657003CF839 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		3BA213381422F657003CF839 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		3BA2133A1422F657003CF839 /* NSObjectAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObjectAddition.m; sourceTree = "<group>"; };
+		3BA2133B1422F657003CF839 /* NStreamAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NStreamAddition.m; sourceTree = "<group>"; };
+		3BA2133D1422F657003CF839 /* CXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument.m; sourceTree = "<group>"; };
+		3BA2133E1422F657003CF839 /* CXMLDocument_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_PrivateExtensions.m; sourceTree = "<group>"; };
+		3BA2133F1422F657003CF839 /* CXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement.m; sourceTree = "<group>"; };
+		3BA213401422F657003CF839 /* CXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode.m; sourceTree = "<group>"; };
+		3BA213411422F657003CF839 /* CXMLNode_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_PrivateExtensions.m; sourceTree = "<group>"; };
+		3BA213421422F657003CF839 /* CXMLNode_XPathExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_XPathExtensions.m; sourceTree = "<group>"; };
+		3BA213441422F657003CF839 /* INFSendBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INFSendBuffer.m; sourceTree = "<group>"; };
+		3BA213451422F657003CF839 /* INFSmartFoxEntities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INFSmartFoxEntities.m; sourceTree = "<group>"; };
+		3BA213461422F657003CF839 /* INFSmartFoxObjectSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INFSmartFoxObjectSerializer.m; sourceTree = "<group>"; };
+		3BA213651422F663003CF839 /* INFSmartFoxBuddy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFSmartFoxBuddy.h; sourceTree = "<group>"; };
+		3BA213661422F663003CF839 /* INFSmartFoxRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFSmartFoxRoom.h; sourceTree = "<group>"; };
+		3BA213671422F663003CF839 /* INFSmartFoxRoomCreateParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFSmartFoxRoomCreateParams.h; sourceTree = "<group>"; };
+		3BA213681422F663003CF839 /* INFSmartFoxRoomVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFSmartFoxRoomVariable.h; sourceTree = "<group>"; };
+		3BA213691422F663003CF839 /* INFSmartFoxUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFSmartFoxUser.h; sourceTree = "<group>"; };
+		3BA2136A1422F663003CF839 /* INFSmartFoxZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFSmartFoxZone.h; sourceTree = "<group>"; };
+		3BA2136C1422F663003CF839 /* INFSmartFoxExtHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFSmartFoxExtHandler.h; sourceTree = "<group>"; };
+		3BA2136D1422F663003CF839 /* INFSmartFoxIMessageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFSmartFoxIMessageHandler.h; sourceTree = "<group>"; };
+		3BA2136E1422F663003CF839 /* INFSmartFoxISFSEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFSmartFoxISFSEvents.h; sourceTree = "<group>"; };
+		3BA2136F1422F663003CF839 /* INFSmartFoxSFSEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFSmartFoxSFSEvent.h; sourceTree = "<group>"; };
+		3BA213701422F663003CF839 /* INFSmartFoxSysHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFSmartFoxSysHandler.h; sourceTree = "<group>"; };
+		3BA213721422F663003CF839 /* SFSHttpConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSHttpConnection.h; sourceTree = "<group>"; };
+		3BA213731422F663003CF839 /* INFSmartFoxiPhoneClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFSmartFoxiPhoneClient.h; sourceTree = "<group>"; };
+		3BA213751422F663003CF839 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		3BA213761422F663003CF839 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		3BA213771422F663003CF839 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		3BA213781422F663003CF839 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		3BA213791422F663003CF839 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		3BA2137A1422F663003CF839 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		3BA2137B1422F663003CF839 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		3BA2137D1422F663003CF839 /* NSObjectAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObjectAddition.h; sourceTree = "<group>"; };
+		3BA2137E1422F663003CF839 /* NSStreamAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStreamAddition.h; sourceTree = "<group>"; };
+		3BA213801422F663003CF839 /* CXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument.h; sourceTree = "<group>"; };
+		3BA213811422F663003CF839 /* CXMLDocument_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_PrivateExtensions.h; sourceTree = "<group>"; };
+		3BA213821422F663003CF839 /* CXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement.h; sourceTree = "<group>"; };
+		3BA213831422F663003CF839 /* CXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode.h; sourceTree = "<group>"; };
+		3BA213841422F663003CF839 /* CXMLNode_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_PrivateExtensions.h; sourceTree = "<group>"; };
+		3BA213851422F663003CF839 /* CXMLNode_XPathExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_XPathExtensions.h; sourceTree = "<group>"; };
+		3BA213861422F663003CF839 /* TouchXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchXML.h; sourceTree = "<group>"; };
+		3BA213881422F663003CF839 /* INFSendBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFSendBuffer.h; sourceTree = "<group>"; };
+		3BA213891422F663003CF839 /* INFSmartFoxEntities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFSmartFoxEntities.h; sourceTree = "<group>"; };
+		3BA2138A1422F663003CF839 /* INFSmartFoxObjectSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFSmartFoxObjectSerializer.h; sourceTree = "<group>"; };
+		3BA2138B1422F69B003CF839 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		3BA2138D1422F6B7003CF839 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +165,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BA2138E1422F6B7003CF839 /* CFNetwork.framework in Frameworks */,
+				3BA2138C1422F69B003CF839 /* libxml2.dylib in Frameworks */,
 				3BA212E01422F403003CF839 /* UIKit.framework in Frameworks */,
 				3BA212E21422F403003CF839 /* Foundation.framework in Frameworks */,
 				3BA212E41422F403003CF839 /* CoreGraphics.framework in Frameworks */,
@@ -97,6 +191,10 @@
 		3BA212D01422F402003CF839 = {
 			isa = PBXGroup;
 			children = (
+				3BA2138D1422F6B7003CF839 /* CFNetwork.framework */,
+				3BA2138B1422F69B003CF839 /* libxml2.dylib */,
+				3BA213631422F662003CF839 /* Header */,
+				3BA213231422F657003CF839 /* Source */,
 				3BA212E91422F403003CF839 /* EG-TD */,
 				3BA213101422F403003CF839 /* EG-TDTests */,
 				3BA212DE1422F403003CF839 /* Frameworks */,
@@ -172,6 +270,192 @@
 				3BA213161422F403003CF839 /* EG-TDTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3BA213231422F657003CF839 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3BA213241422F657003CF839 /* Data */,
+				3BA2132B1422F657003CF839 /* Handlers */,
+				3BA2132F1422F657003CF839 /* Http */,
+				3BA213311422F657003CF839 /* INFSmartFoxiPhoneClient.m */,
+				3BA213321422F657003CF839 /* JSON */,
+				3BA213391422F657003CF839 /* Mac */,
+				3BA2133C1422F657003CF839 /* TouchXML */,
+				3BA213431422F657003CF839 /* Util */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		3BA213241422F657003CF839 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3BA213251422F657003CF839 /* INFSmartFoxBuddy.m */,
+				3BA213261422F657003CF839 /* INFSmartFoxRoom.m */,
+				3BA213271422F657003CF839 /* INFSmartFoxRoomCreateParams.m */,
+				3BA213281422F657003CF839 /* INFSmartFoxRoomVariable.m */,
+				3BA213291422F657003CF839 /* INFSmartFoxUser.m */,
+				3BA2132A1422F657003CF839 /* INFSmartFoxZone.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3BA2132B1422F657003CF839 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				3BA2132C1422F657003CF839 /* INFSmartFoxExtHandler.m */,
+				3BA2132D1422F657003CF839 /* INFSmartFoxSFSEvent.m */,
+				3BA2132E1422F657003CF839 /* INFSmartFoxSysHandler.m */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		3BA2132F1422F657003CF839 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				3BA213301422F657003CF839 /* SFSHttpConnection.m */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		3BA213321422F657003CF839 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				3BA213331422F657003CF839 /* NSObject+SBJSON.m */,
+				3BA213341422F657003CF839 /* NSString+SBJSON.m */,
+				3BA213351422F657003CF839 /* SBJSON.m */,
+				3BA213361422F657003CF839 /* SBJsonBase.m */,
+				3BA213371422F657003CF839 /* SBJsonParser.m */,
+				3BA213381422F657003CF839 /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		3BA213391422F657003CF839 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				3BA2133A1422F657003CF839 /* NSObjectAddition.m */,
+				3BA2133B1422F657003CF839 /* NStreamAddition.m */,
+			);
+			path = Mac;
+			sourceTree = "<group>";
+		};
+		3BA2133C1422F657003CF839 /* TouchXML */ = {
+			isa = PBXGroup;
+			children = (
+				3BA2133D1422F657003CF839 /* CXMLDocument.m */,
+				3BA2133E1422F657003CF839 /* CXMLDocument_PrivateExtensions.m */,
+				3BA2133F1422F657003CF839 /* CXMLElement.m */,
+				3BA213401422F657003CF839 /* CXMLNode.m */,
+				3BA213411422F657003CF839 /* CXMLNode_PrivateExtensions.m */,
+				3BA213421422F657003CF839 /* CXMLNode_XPathExtensions.m */,
+			);
+			path = TouchXML;
+			sourceTree = "<group>";
+		};
+		3BA213431422F657003CF839 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				3BA213441422F657003CF839 /* INFSendBuffer.m */,
+				3BA213451422F657003CF839 /* INFSmartFoxEntities.m */,
+				3BA213461422F657003CF839 /* INFSmartFoxObjectSerializer.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		3BA213631422F662003CF839 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				3BA213641422F663003CF839 /* Data */,
+				3BA2136B1422F663003CF839 /* Handlers */,
+				3BA213711422F663003CF839 /* Http */,
+				3BA213731422F663003CF839 /* INFSmartFoxiPhoneClient.h */,
+				3BA213741422F663003CF839 /* JSON */,
+				3BA2137C1422F663003CF839 /* Mac */,
+				3BA2137F1422F663003CF839 /* TouchXML */,
+				3BA213871422F663003CF839 /* Util */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		3BA213641422F663003CF839 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3BA213651422F663003CF839 /* INFSmartFoxBuddy.h */,
+				3BA213661422F663003CF839 /* INFSmartFoxRoom.h */,
+				3BA213671422F663003CF839 /* INFSmartFoxRoomCreateParams.h */,
+				3BA213681422F663003CF839 /* INFSmartFoxRoomVariable.h */,
+				3BA213691422F663003CF839 /* INFSmartFoxUser.h */,
+				3BA2136A1422F663003CF839 /* INFSmartFoxZone.h */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3BA2136B1422F663003CF839 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				3BA2136C1422F663003CF839 /* INFSmartFoxExtHandler.h */,
+				3BA2136D1422F663003CF839 /* INFSmartFoxIMessageHandler.h */,
+				3BA2136E1422F663003CF839 /* INFSmartFoxISFSEvents.h */,
+				3BA2136F1422F663003CF839 /* INFSmartFoxSFSEvent.h */,
+				3BA213701422F663003CF839 /* INFSmartFoxSysHandler.h */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		3BA213711422F663003CF839 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				3BA213721422F663003CF839 /* SFSHttpConnection.h */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		3BA213741422F663003CF839 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				3BA213751422F663003CF839 /* JSON.h */,
+				3BA213761422F663003CF839 /* NSObject+SBJSON.h */,
+				3BA213771422F663003CF839 /* NSString+SBJSON.h */,
+				3BA213781422F663003CF839 /* SBJSON.h */,
+				3BA213791422F663003CF839 /* SBJsonBase.h */,
+				3BA2137A1422F663003CF839 /* SBJsonParser.h */,
+				3BA2137B1422F663003CF839 /* SBJsonWriter.h */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		3BA2137C1422F663003CF839 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				3BA2137D1422F663003CF839 /* NSObjectAddition.h */,
+				3BA2137E1422F663003CF839 /* NSStreamAddition.h */,
+			);
+			path = Mac;
+			sourceTree = "<group>";
+		};
+		3BA2137F1422F663003CF839 /* TouchXML */ = {
+			isa = PBXGroup;
+			children = (
+				3BA213801422F663003CF839 /* CXMLDocument.h */,
+				3BA213811422F663003CF839 /* CXMLDocument_PrivateExtensions.h */,
+				3BA213821422F663003CF839 /* CXMLElement.h */,
+				3BA213831422F663003CF839 /* CXMLNode.h */,
+				3BA213841422F663003CF839 /* CXMLNode_PrivateExtensions.h */,
+				3BA213851422F663003CF839 /* CXMLNode_XPathExtensions.h */,
+				3BA213861422F663003CF839 /* TouchXML.h */,
+			);
+			path = TouchXML;
+			sourceTree = "<group>";
+		};
+		3BA213871422F663003CF839 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				3BA213881422F663003CF839 /* INFSendBuffer.h */,
+				3BA213891422F663003CF839 /* INFSmartFoxEntities.h */,
+				3BA2138A1422F663003CF839 /* INFSmartFoxObjectSerializer.h */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +569,34 @@
 				3BA212F41422F403003CF839 /* EG_TDAppDelegate.m in Sources */,
 				3BA212FE1422F403003CF839 /* EAGLView.m in Sources */,
 				3BA213011422F403003CF839 /* EG_TDViewController.m in Sources */,
+				3BA213471422F657003CF839 /* INFSmartFoxBuddy.m in Sources */,
+				3BA213481422F657003CF839 /* INFSmartFoxRoom.m in Sources */,
+				3BA213491422F657003CF839 /* INFSmartFoxRoomCreateParams.m in Sources */,
+				3BA2134A1422F657003CF839 /* INFSmartFoxRoomVariable.m in Sources */,
+				3BA2134B1422F657003CF839 /* INFSmartFoxUser.m in Sources */,
+				3BA2134C1422F657003CF839 /* INFSmartFoxZone.m in Sources */,
+				3BA2134D1422F657003CF839 /* INFSmartFoxExtHandler.m in Sources */,
+				3BA2134E1422F657003CF839 /* INFSmartFoxSFSEvent.m in Sources */,
+				3BA2134F1422F657003CF839 /* INFSmartFoxSysHandler.m in Sources */,
+				3BA213501422F657003CF839 /* SFSHttpConnection.m in Sources */,
+				3BA213511422F657003CF839 /* INFSmartFoxiPhoneClient.m in Sources */,
+				3BA213521422F657003CF839 /* NSObject+SBJSON.m in Sources */,
+				3BA213531422F657003CF839 /* NSString+SBJSON.m in Sources */,
+				3BA213541422F657003CF839 /* SBJSON.m in Sources */,
+				3BA213551422F657003CF839 /* SBJsonBase.m in Sources */,
+				3BA213561422F657003CF839 /* SBJsonParser.m in Sources */,
+				3BA213571422F657003CF839 /* SBJsonWriter.m in Sources */,
+				3BA213581422F657003CF839 /* NSObjectAddition.m in Sources */,
+				3BA213591422F657003CF839 /* NStreamAddition.m in Sources */,
+				3BA2135A1422F657003CF839 /* CXMLDocument.m in Sources */,
+				3BA2135B1422F657003CF839 /* CXMLDocument_PrivateExtensions.m in Sources */,
+				3BA2135C1422F657003CF839 /* CXMLElement.m in Sources */,
+				3BA2135D1422F657003CF839 /* CXMLNode.m in Sources */,
+				3BA2135E1422F657003CF839 /* CXMLNode_PrivateExtensions.m in Sources */,
+				3BA2135F1422F657003CF839 /* CXMLNode_XPathExtensions.m in Sources */,
+				3BA213601422F657003CF839 /* INFSendBuffer.m in Sources */,
+				3BA213611422F657003CF839 /* INFSmartFoxEntities.m in Sources */,
+				3BA213621422F657003CF839 /* INFSmartFoxObjectSerializer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +695,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EG-TD/EG-TD-Prefix.pch";
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				"HEADER_SEARCH_PATHS[arch=*]" = "$(SDK_DIR)\"/usr/include/libxml2";
 				INFOPLIST_FILE = "EG-TD/EG-TD-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -397,6 +710,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EG-TD/EG-TD-Prefix.pch";
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				"HEADER_SEARCH_PATHS[arch=*]" = "$(SDK_DIR)\"/usr/include/libxml2";
 				INFOPLIST_FILE = "EG-TD/EG-TD-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;

@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "INFSmartFoxISFSEvents.h"
+#import "INFSmartFoxSFSEvent.h"
+#import "INFSmartFoxiPhoneClient.h"
+#import "INFSmartFoxObjectSerializer.h"
+#import "INFSmartFoxRoom.h"
 
 @class EG_TDViewController;
 
-@interface EG_TDAppDelegate : NSObject <UIApplicationDelegate> {
+@interface EG_TDAppDelegate : NSObject <UIApplicationDelegate, INFSmartFoxISFSEvents> {
 
 }
 
