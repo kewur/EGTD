@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'EG-TDTests' target in the 'EG-TDTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif

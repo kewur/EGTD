@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BA212E01422F403003CF839 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA212DF1422F403003CF839 /* UIKit.framework */; };
+		3BA212E21422F403003CF839 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA212E11422F403003CF839 /* Foundation.framework */; };
+		3BA212E41422F403003CF839 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA212E31422F403003CF839 /* CoreGraphics.framework */; };
+		3BA212E61422F403003CF839 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA212E51422F403003CF839 /* QuartzCore.framework */; };
+		3BA212E81422F403003CF839 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA212E71422F403003CF839 /* OpenGLES.framework */; };
+		3BA212EE1422F403003CF839 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BA212EC1422F403003CF839 /* InfoPlist.strings */; };
+		3BA212F11422F403003CF839 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA212F01422F403003CF839 /* main.m */; };
+		3BA212F41422F403003CF839 /* EG_TDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA212F31422F403003CF839 /* EG_TDAppDelegate.m */; };
+		3BA212F71422F403003CF839 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BA212F51422F403003CF839 /* MainWindow.xib */; };
+		3BA212F91422F403003CF839 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3BA212F81422F403003CF839 /* Shader.fsh */; };
+		3BA212FB1422F403003CF839 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3BA212FA1422F403003CF839 /* Shader.vsh */; };
+		3BA212FE1422F403003CF839 /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA212FD1422F403003CF839 /* EAGLView.m */; };
+		3BA213011422F403003CF839 /* EG_TDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA213001422F403003CF839 /* EG_TDViewController.m */; };
+		3BA213041422F403003CF839 /* EG_TDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BA213021422F403003CF839 /* EG_TDViewController.xib */; };
+		3BA2130B1422F403003CF839 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA212DF1422F403003CF839 /* UIKit.framework */; };
+		3BA2130C1422F403003CF839 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA212E11422F403003CF839 /* Foundation.framework */; };
+		3BA2130D1422F403003CF839 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA212E31422F403003CF839 /* CoreGraphics.framework */; };
+		3BA213151422F403003CF839 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BA213131422F403003CF839 /* InfoPlist.strings */; };
+		3BA213181422F403003CF839 /* EG_TDTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 3BA213171422F403003CF839 /* EG_TDTests.h */; };
+		3BA2131A1422F403003CF839 /* EG_TDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA213191422F403003CF839 /* EG_TDTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3BA2130E1422F403003CF839 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BA212D21422F402003CF839 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BA212DA1422F402003CF839;
+			remoteInfo = "EG-TD";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3BA212DB1422F402003CF839 /* EG-TD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EG-TD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BA212DF1422F403003CF839 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3BA212E11422F403003CF839 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3BA212E31422F403003CF839 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3BA212E51422F403003CF839 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3BA212E71422F403003CF839 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		3BA212EB1422F403003CF839 /* EG-TD-Info.plist */ = {isa = PBXFileReference; path = "EG-TD-Info.plist"; sourceTree = "<group>"; };
+		3BA212ED1422F403003CF839 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3BA212EF1422F403003CF839 /* EG-TD-Prefix.pch */ = {isa = PBXFileReference; path = "EG-TD-Prefix.pch"; sourceTree = "<group>"; };
+		3BA212F01422F403003CF839 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3BA212F21422F403003CF839 /* EG_TDAppDelegate.h */ = {isa = PBXFileReference; path = EG_TDAppDelegate.h; sourceTree = "<group>"; };
+		3BA212F31422F403003CF839 /* EG_TDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EG_TDAppDelegate.m; sourceTree = "<group>"; };
+		3BA212F61422F403003CF839 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		3BA212F81422F403003CF839 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		3BA212FA1422F403003CF839 /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		3BA212FC1422F403003CF839 /* EAGLView.h */ = {isa = PBXFileReference; path = EAGLView.h; sourceTree = "<group>"; };
+		3BA212FD1422F403003CF839 /* EAGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
+		3BA212FF1422F403003CF839 /* EG_TDViewController.h */ = {isa = PBXFileReference; path = EG_TDViewController.h; sourceTree = "<group>"; };
+		3BA213001422F403003CF839 /* EG_TDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EG_TDViewController.m; sourceTree = "<group>"; };
+		3BA213031422F403003CF839 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/EG_TDViewController.xib; sourceTree = "<group>"; };
+		3BA2130A1422F403003CF839 /* EG-TDTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EG-TDTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BA213121422F403003CF839 /* EG-TDTests-Info.plist */ = {isa = PBXFileReference; path = "EG-TDTests-Info.plist"; sourceTree = "<group>"; };
+		3BA213141422F403003CF839 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3BA213161422F403003CF839 /* EG-TDTests-Prefix.pch */ = {isa = PBXFileReference; path = "EG-TDTests-Prefix.pch"; sourceTree = "<group>"; };
+		3BA213171422F403003CF839 /* EG_TDTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EG_TDTests.h; sourceTree = "<group>"; };
+		3BA213191422F403003CF839 /* EG_TDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EG_TDTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BA212D81422F402003CF839 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BA212E01422F403003CF839 /* UIKit.framework in Frameworks */,
+				3BA212E21422F403003CF839 /* Foundation.framework in Frameworks */,
+				3BA212E41422F403003CF839 /* CoreGraphics.framework in Frameworks */,
+				3BA212E61422F403003CF839 /* QuartzCore.framework in Frameworks */,
+				3BA212E81422F403003CF839 /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BA213061422F403003CF839 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BA2130B1422F403003CF839 /* UIKit.framework in Frameworks */,
+				3BA2130C1422F403003CF839 /* Foundation.framework in Frameworks */,
+				3BA2130D1422F403003CF839 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3BA212D01422F402003CF839 = {
+			isa = PBXGroup;
+			children = (
+				3BA212E91422F403003CF839 /* EG-TD */,
+				3BA213101422F403003CF839 /* EG-TDTests */,
+				3BA212DE1422F403003CF839 /* Frameworks */,
+				3BA212DC1422F402003CF839 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3BA212DC1422F402003CF839 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BA212DB1422F402003CF839 /* EG-TD.app */,
+				3BA2130A1422F403003CF839 /* EG-TDTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BA212DE1422F403003CF839 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BA212DF1422F403003CF839 /* UIKit.framework */,
+				3BA212E11422F403003CF839 /* Foundation.framework */,
+				3BA212E31422F403003CF839 /* CoreGraphics.framework */,
+				3BA212E51422F403003CF839 /* QuartzCore.framework */,
+				3BA212E71422F403003CF839 /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3BA212E91422F403003CF839 /* EG-TD */ = {
+			isa = PBXGroup;
+			children = (
+				3BA212F21422F403003CF839 /* EG_TDAppDelegate.h */,
+				3BA212F31422F403003CF839 /* EG_TDAppDelegate.m */,
+				3BA212F51422F403003CF839 /* MainWindow.xib */,
+				3BA212F81422F403003CF839 /* Shader.fsh */,
+				3BA212FA1422F403003CF839 /* Shader.vsh */,
+				3BA212FC1422F403003CF839 /* EAGLView.h */,
+				3BA212FD1422F403003CF839 /* EAGLView.m */,
+				3BA212FF1422F403003CF839 /* EG_TDViewController.h */,
+				3BA213001422F403003CF839 /* EG_TDViewController.m */,
+				3BA213021422F403003CF839 /* EG_TDViewController.xib */,
+				3BA212EA1422F403003CF839 /* Supporting Files */,
+			);
+			path = "EG-TD";
+			sourceTree = "<group>";
+		};
+		3BA212EA1422F403003CF839 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3BA212EB1422F403003CF839 /* EG-TD-Info.plist */,
+				3BA212EC1422F403003CF839 /* InfoPlist.strings */,
+				3BA212EF1422F403003CF839 /* EG-TD-Prefix.pch */,
+				3BA212F01422F403003CF839 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3BA213101422F403003CF839 /* EG-TDTests */ = {
+			isa = PBXGroup;
+			children = (
+				3BA213171422F403003CF839 /* EG_TDTests.h */,
+				3BA213191422F403003CF839 /* EG_TDTests.m */,
+				3BA213111422F403003CF839 /* Supporting Files */,
+			);
+			path = "EG-TDTests";
+			sourceTree = "<group>";
+		};
+		3BA213111422F403003CF839 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3BA213121422F403003CF839 /* EG-TDTests-Info.plist */,
+				3BA213131422F403003CF839 /* InfoPlist.strings */,
+				3BA213161422F403003CF839 /* EG-TDTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BA212DA1422F402003CF839 /* EG-TD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BA2131D1422F403003CF839 /* Build configuration list for PBXNativeTarget "EG-TD" */;
+			buildPhases = (
+				3BA212D71422F402003CF839 /* Sources */,
+				3BA212D81422F402003CF839 /* Frameworks */,
+				3BA212D91422F402003CF839 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EG-TD";
+			productName = "EG-TD";
+			productReference = 3BA212DB1422F402003CF839 /* EG-TD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3BA213091422F403003CF839 /* EG-TDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BA213201422F403003CF839 /* Build configuration list for PBXNativeTarget "EG-TDTests" */;
+			buildPhases = (
+				3BA213051422F403003CF839 /* Sources */,
+				3BA213061422F403003CF839 /* Frameworks */,
+				3BA213071422F403003CF839 /* Resources */,
+				3BA213081422F403003CF839 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BA2130F1422F403003CF839 /* PBXTargetDependency */,
+			);
+			name = "EG-TDTests";
+			productName = "EG-TDTests";
+			productReference = 3BA2130A1422F403003CF839 /* EG-TDTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BA212D21422F402003CF839 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 3BA212D51422F402003CF839 /* Build configuration list for PBXProject "EG-TD" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3BA212D01422F402003CF839;
+			productRefGroup = 3BA212DC1422F402003CF839 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3BA212DA1422F402003CF839 /* EG-TD */,
+				3BA213091422F403003CF839 /* EG-TDTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BA212D91422F402003CF839 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BA212EE1422F403003CF839 /* InfoPlist.strings in Resources */,
+				3BA212F71422F403003CF839 /* MainWindow.xib in Resources */,
+				3BA212F91422F403003CF839 /* Shader.fsh in Resources */,
+				3BA212FB1422F403003CF839 /* Shader.vsh in Resources */,
+				3BA213041422F403003CF839 /* EG_TDViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BA213071422F403003CF839 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BA213151422F403003CF839 /* InfoPlist.strings in Resources */,
+				3BA213181422F403003CF839 /* EG_TDTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BA213081422F403003CF839 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BA212D71422F402003CF839 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BA212F11422F403003CF839 /* main.m in Sources */,
+				3BA212F41422F403003CF839 /* EG_TDAppDelegate.m in Sources */,
+				3BA212FE1422F403003CF839 /* EAGLView.m in Sources */,
+				3BA213011422F403003CF839 /* EG_TDViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BA213051422F403003CF839 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BA2131A1422F403003CF839 /* EG_TDTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3BA2130F1422F403003CF839 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BA212DA1422F402003CF839 /* EG-TD */;
+			targetProxy = 3BA2130E1422F403003CF839 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3BA212EC1422F403003CF839 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BA212ED1422F403003CF839 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3BA212F51422F403003CF839 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BA212F61422F403003CF839 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		3BA213021422F403003CF839 /* EG_TDViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BA213031422F403003CF839 /* en */,
+			);
+			name = EG_TDViewController.xib;
+			sourceTree = "<group>";
+		};
+		3BA213131422F403003CF839 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BA213141422F403003CF839 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3BA2131B1422F403003CF839 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3BA2131C1422F403003CF839 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		3BA2131E1422F403003CF839 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EG-TD/EG-TD-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "EG-TD/EG-TD-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3BA2131F1422F403003CF839 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EG-TD/EG-TD-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "EG-TD/EG-TD-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3BA213211422F403003CF839 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EG-TD.app/EG-TD";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EG-TDTests/EG-TDTests-Prefix.pch";
+				INFOPLIST_FILE = "EG-TDTests/EG-TDTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3BA213221422F403003CF839 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EG-TD.app/EG-TD";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EG-TDTests/EG-TDTests-Prefix.pch";
+				INFOPLIST_FILE = "EG-TDTests/EG-TDTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BA212D51422F402003CF839 /* Build configuration list for PBXProject "EG-TD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BA2131B1422F403003CF839 /* Debug */,
+				3BA2131C1422F403003CF839 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BA2131D1422F403003CF839 /* Build configuration list for PBXNativeTarget "EG-TD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BA2131E1422F403003CF839 /* Debug */,
+				3BA2131F1422F403003CF839 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3BA213201422F403003CF839 /* Build configuration list for PBXNativeTarget "EG-TDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BA213211422F403003CF839 /* Debug */,
+				3BA213221422F403003CF839 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3BA212D21422F402003CF839 /* Project object */;
+}
