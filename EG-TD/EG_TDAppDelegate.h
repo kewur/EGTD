@@ -13,6 +13,7 @@
 #import "INFSmartFoxObjectSerializer.h"
 #import "INFSmartFoxRoom.h"
 
+//osman
 @class EG_TDViewController;
 
 @interface EG_TDAppDelegate : NSObject <UIApplicationDelegate, INFSmartFoxISFSEvents> {
