@@ -166,10 +166,10 @@ enum {
     
     // Replace the implementation of this method to do your own custom drawing.
     static const GLfloat squareVertices[] = {
-        -0.5f, -0.33f,
-        0.5f, -0.33f,
-        -0.5f,  0.33f,
-        0.5f,  0.33f,
+        -0.5f, -0.33f,1,
+        0.5f, -0.33f,1,
+        -0.5f,  0.33f,1,
+        0.5f,  0.33f,1,
     };
     
     static const GLubyte squareColors[] = {
@@ -193,7 +193,8 @@ enum {
         transY += 0.075f;	
         
         // Update attribute values.
-        glVertexAttribPointer(ATTRIB_VERTEX, 2, GL_FLOAT, 0, 0, squareVertices);
+        
+        glVertexAttribPointer(ATTRIB_VERTEX, 3, GL_FLOAT, 0, 0, squareVertices);
         glEnableVertexAttribArray(ATTRIB_VERTEX);
         glVertexAttribPointer(ATTRIB_COLOR, 4, GL_UNSIGNED_BYTE, 1, 0, squareColors);
         glEnableVertexAttribArray(ATTRIB_COLOR);
