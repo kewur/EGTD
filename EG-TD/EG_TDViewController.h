@@ -15,6 +15,8 @@
 #import <OpenGLES/ES2/gl.h>
 #import <OpenGLES/ES2/glext.h>
 
+#import "CommonOpenGL.h"
+
 @interface EG_TDViewController : UIViewController {
 @private
     EAGLContext *context;
@@ -23,6 +25,14 @@
     BOOL animating;
     NSInteger animationFrameInterval;
     CADisplayLink *displayLink;
+    
+    // Angle of rotation
+    GLfloat angle;
+    
+    // Floor Vertices
+    EGVertex3D zFloorVertices[81];
+    EGVertex3D xFloorVertices[81];
+    
 }
 
 @property (readonly, nonatomic, getter=isAnimating) BOOL animating;

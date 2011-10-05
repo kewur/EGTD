@@ -64,7 +64,7 @@
 
 - (void)createFramebuffer
 {
-    NSLog(@"3");
+    
     if (context && !defaultFramebuffer) {
         [EAGLContext setCurrentContext:context];
         
@@ -99,6 +99,12 @@
         if (colorRenderbuffer) {
             glDeleteRenderbuffers(1, &colorRenderbuffer);
             colorRenderbuffer = 0;
+        }
+        //Clear the depth buffer
+        if (depthRenderbuffer)
+        {
+            glDeleteRenderbuffersOES(1, &depthRenderbuffer);
+            depthRenderbuffer = 0;
         }
     }
 }

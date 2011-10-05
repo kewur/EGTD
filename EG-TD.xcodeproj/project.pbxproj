@@ -16,8 +16,6 @@
 		3BA212F11422F403003CF839 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA212F01422F403003CF839 /* main.m */; };
 		3BA212F41422F403003CF839 /* EG_TDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA212F31422F403003CF839 /* EG_TDAppDelegate.m */; };
 		3BA212F71422F403003CF839 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BA212F51422F403003CF839 /* MainWindow.xib */; };
-		3BA212F91422F403003CF839 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3BA212F81422F403003CF839 /* Shader.fsh */; };
-		3BA212FB1422F403003CF839 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3BA212FA1422F403003CF839 /* Shader.vsh */; };
 		3BA212FE1422F403003CF839 /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA212FD1422F403003CF839 /* EAGLView.m */; };
 		3BA213011422F403003CF839 /* EG_TDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA213001422F403003CF839 /* EG_TDViewController.m */; };
 		3BA213041422F403003CF839 /* EG_TDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BA213021422F403003CF839 /* EG_TDViewController.xib */; };
@@ -70,6 +68,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2EBF8637143D1B69003CAA61 /* CommonOpenGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonOpenGL.h; sourceTree = "<group>"; };
 		3BA212DB1422F402003CF839 /* EG-TD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EG-TD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA212DF1422F403003CF839 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3BA212E11422F403003CF839 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -83,8 +82,6 @@
 		3BA212F21422F403003CF839 /* EG_TDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EG_TDAppDelegate.h; sourceTree = "<group>"; };
 		3BA212F31422F403003CF839 /* EG_TDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EG_TDAppDelegate.m; sourceTree = "<group>"; };
 		3BA212F61422F403003CF839 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		3BA212F81422F403003CF839 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
-		3BA212FA1422F403003CF839 /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
 		3BA212FC1422F403003CF839 /* EAGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
 		3BA212FD1422F403003CF839 /* EAGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
 		3BA212FF1422F403003CF839 /* EG_TDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EG_TDViewController.h; sourceTree = "<group>"; };
@@ -188,9 +185,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EBF8636143D1B32003CAA61 /* Common Files */ = {
+			isa = PBXGroup;
+			children = (
+				2EBF8637143D1B69003CAA61 /* CommonOpenGL.h */,
+			);
+			name = "Common Files";
+			sourceTree = "<group>";
+		};
 		3BA212D01422F402003CF839 = {
 			isa = PBXGroup;
 			children = (
+				2EBF8636143D1B32003CAA61 /* Common Files */,
 				3BA2138D1422F6B7003CF839 /* CFNetwork.framework */,
 				3BA2138B1422F69B003CF839 /* libxml2.dylib */,
 				3BA213631422F662003CF839 /* Header */,
@@ -229,8 +235,6 @@
 				3BA212F21422F403003CF839 /* EG_TDAppDelegate.h */,
 				3BA212F31422F403003CF839 /* EG_TDAppDelegate.m */,
 				3BA212F51422F403003CF839 /* MainWindow.xib */,
-				3BA212F81422F403003CF839 /* Shader.fsh */,
-				3BA212FA1422F403003CF839 /* Shader.vsh */,
 				3BA212FC1422F403003CF839 /* EAGLView.h */,
 				3BA212FD1422F403003CF839 /* EAGLView.m */,
 				3BA212FF1422F403003CF839 /* EG_TDViewController.h */,
@@ -527,8 +531,6 @@
 			files = (
 				3BA212EE1422F403003CF839 /* InfoPlist.strings in Resources */,
 				3BA212F71422F403003CF839 /* MainWindow.xib in Resources */,
-				3BA212F91422F403003CF839 /* Shader.fsh in Resources */,
-				3BA212FB1422F403003CF839 /* Shader.vsh in Resources */,
 				3BA213041422F403003CF839 /* EG_TDViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
