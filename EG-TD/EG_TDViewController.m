@@ -10,7 +10,7 @@
 
 #import "EG_TDViewController.h"
 #import "EAGLView.h"
-
+//TEST
 // Uniform index.
 enum {
     UNIFORM_TRANSLATE,
@@ -92,7 +92,7 @@ enum {
 - (void)viewWillAppear:(BOOL)animated
 {
     [self startAnimation];
-    
+ 
     [super viewWillAppear:animated];
 }
 
@@ -146,7 +146,7 @@ enum {
         [aDisplayLink setFrameInterval:animationFrameInterval];
         [aDisplayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
         self.displayLink = aDisplayLink;
-        
+      
         animating = TRUE;
     }
 }
@@ -162,6 +162,8 @@ enum {
 
 - (void)drawFrame
 {
+    
+      
     [(EAGLView *)self.view setFramebuffer];
     
     // Replace the implementation of this method to do your own custom drawing.

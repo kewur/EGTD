@@ -64,6 +64,7 @@
 
 - (void)createFramebuffer
 {
+    NSLog(@"3");
     if (context && !defaultFramebuffer) {
         [EAGLContext setCurrentContext:context];
         
@@ -113,6 +114,8 @@
         glBindFramebuffer(GL_FRAMEBUFFER, defaultFramebuffer);
         
         glViewport(0, 0, framebufferWidth, framebufferHeight);
+        
+       // NSLog(@"2");
     }
 }
 

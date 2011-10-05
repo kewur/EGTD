@@ -781,6 +781,7 @@
 				3BA2131F1422F403003CF839 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BA213201422F403003CF839 /* Build configuration list for PBXNativeTarget "EG-TDTests" */ = {
 			isa = XCConfigurationList;
@@ -789,6 +790,7 @@
 				3BA213221422F403003CF839 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
