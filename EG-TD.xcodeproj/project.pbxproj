@@ -55,6 +55,8 @@
 		3BA213621422F657003CF839 /* INFSmartFoxObjectSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA213461422F657003CF839 /* INFSmartFoxObjectSerializer.m */; };
 		3BA2138C1422F69B003CF839 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA2138B1422F69B003CF839 /* libxml2.dylib */; };
 		3BA2138E1422F6B7003CF839 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA2138D1422F6B7003CF839 /* CFNetwork.framework */; };
+		3BB70BDC143FA75900E51BD0 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB70BDA143FA75900E51BD0 /* MenuViewController.m */; };
+		3BB70BDD143FA75900E51BD0 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BB70BDB143FA75900E51BD0 /* MenuViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +157,9 @@
 		3BA2138A1422F663003CF839 /* INFSmartFoxObjectSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFSmartFoxObjectSerializer.h; sourceTree = "<group>"; };
 		3BA2138B1422F69B003CF839 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		3BA2138D1422F6B7003CF839 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		3BB70BD9143FA75900E51BD0 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		3BB70BDA143FA75900E51BD0 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		3BB70BDB143FA75900E51BD0 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +244,9 @@
 				3BA212FD1422F403003CF839 /* EAGLView.m */,
 				3BA212FF1422F403003CF839 /* EG_TDViewController.h */,
 				3BA213001422F403003CF839 /* EG_TDViewController.m */,
+				3BB70BD9143FA75900E51BD0 /* MenuViewController.h */,
+				3BB70BDA143FA75900E51BD0 /* MenuViewController.m */,
+				3BB70BDB143FA75900E51BD0 /* MenuViewController.xib */,
 				3BA213021422F403003CF839 /* EG_TDViewController.xib */,
 				3BA212EA1422F403003CF839 /* Supporting Files */,
 			);
@@ -532,6 +540,7 @@
 				3BA212EE1422F403003CF839 /* InfoPlist.strings in Resources */,
 				3BA212F71422F403003CF839 /* MainWindow.xib in Resources */,
 				3BA213041422F403003CF839 /* EG_TDViewController.xib in Resources */,
+				3BB70BDD143FA75900E51BD0 /* MenuViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,6 +608,7 @@
 				3BA213601422F657003CF839 /* INFSendBuffer.m in Sources */,
 				3BA213611422F657003CF839 /* INFSmartFoxEntities.m in Sources */,
 				3BA213621422F657003CF839 /* INFSmartFoxObjectSerializer.m in Sources */,
+				3BB70BDC143FA75900E51BD0 /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
