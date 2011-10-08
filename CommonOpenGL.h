@@ -6,13 +6,45 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
+#pragma mark -
+#pragma mark Debug
+
+//#define DEBUG 0
 
 #pragma mark -
 #pragma mark Macros
 
-#define DEGREES_TO_RADIANS(__ANGLE__) ((__ANGLE__) / 180.0 * M_PI)
-#define RANDOM_0_TO_1() ((random() / (GLfloat)0x7fffffff ))
+// Macro which returns a random value between -1 and 1
 #define RANDOM_MINUS_1_TO_1() ((random() / (GLfloat)0x3fffffff )-1.0f)
+
+// MAcro which returns a random number between 0 and 1
+#define RANDOM_0_TO_1() ((random() / (GLfloat)0x7fffffff ))
+
+// Macro which converts degrees into radians
+#define DEGREES_TO_RADIANS(__ANGLE__) ((__ANGLE__) / 180.0 * M_PI)
+
+#pragma mark -
+#pragma mark Enumerations
+
+enum {
+	kControlType_NewGame,
+	kControlType_Settings,
+	kControlType_HighScores,
+	kControlType_QuitGame,
+	kControlType_PauseGame,
+	kControl_Idle,
+	kControl_Scaling,
+	kControl_Selected,
+	kGameState_Running,
+	kGameState_Paused,
+	kGameState_Loading,
+	kSceneState_Idle,
+	kSceneState_TransitionIn,
+	kSceneState_TransitionOut,
+	kSceneState_Running,
+	kSceneState_Paused
+};
+
 
 #pragma mark -
 #pragma mark Structures
@@ -32,6 +64,18 @@ typedef struct {
     GLfloat z;
 } EGVertex3D;
 
+typedef struct _Vector2f {
+	GLfloat x;
+	GLfloat y;
+} EGVector2f;
+
+typedef struct _Quad2f {
+	GLfloat bl_x, bl_y;
+	GLfloat br_x, br_y;
+	GLfloat tl_x, tl_y;
+	GLfloat tr_x, tr_y;
+} EGQuad2f;
+
 #pragma mark -
 #pragma mark Color functions
 
@@ -48,6 +92,53 @@ static inline EGColor EGColorMake(GLfloat r, GLfloat g, GLfloat b, GLfloat a)
 
 #pragma mark -
 #pragma mark GLUT functions
+#pragma mark -
+#pragma mark Inline Functions
+
+static const EGColor Color4fInit = {1.0f, 1.0f, 1.0f, 1.0f};
+
+static const EGVertex3D Vector3fZero = {0.0f, 0.0f, 0.0f};
+
+static inline EGVertex3D Vector3fMake(GLfloat x, GLfloat y, GLfloat z)
+{
+	return (EGVertex3D) {x, y, z};
+}
+
+static inline EGColor Color4fMake(GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha)
+{
+	return (EGColor) {red, green, blue, alpha};
+}
+
+static inline EGVertex3D Vector3fMultiply(EGVertex3D v, GLfloat s)
+{
+	return (EGVertex3D) {v.x * s, v.y * s, v.z * s};
+}
+
+static inline EGVertex3D Vector3fAdd(EGVertex3D v1, EGVertex3D v2)
+{
+	return (EGVertex3D) {v1.x + v2.x , v1.y + v2.y, v1.z + v2.z};
+}
+
+static inline EGVertex3D Vector3fSub(EGVertex3D v1, EGVertex3D v2)
+{
+	return (EGVertex3D) {v1.x - v2.x, v1.y - v2.y, v1.z - v2.z};
+}
+
+static inline GLfloat Vector3fDot(EGVertex3D v1, EGVertex3D v2)
+{
+	return (GLfloat) v1.x * v2.x + v1.y * v2.y + v1.z * v2.z;
+}
+
+static inline GLfloat Vector3fLength(EGVertex3D v)
+{
+	return (GLfloat) sqrtf(Vector3fDot(v, v));
+}
+
+static inline EGVertex3D Vector3fNormalize(EGVertex3D v)
+{
+	return Vector3fMultiply(v, 1.0f/Vector3fLength(v));
+}
+
 
 static inline void __gluMakeIdentityf(GLfloat m[16])
 {

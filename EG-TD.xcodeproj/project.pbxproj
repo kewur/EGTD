@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E25771C14404E3A00A3CB95 /* Map3D.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25771B14404E3A00A3CB95 /* Map3D.m */; };
+		2E25772114404E5700A3CB95 /* Director.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25772014404E5700A3CB95 /* Director.m */; };
+		2E25772514404E8000A3CB95 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25772414404E8000A3CB95 /* GameScene.m */; };
+		2E25772814404E8800A3CB95 /* AbstractScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25772714404E8800A3CB95 /* AbstractScene.m */; };
+		2E25772D14404EA200A3CB95 /* Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25772C14404EA200A3CB95 /* Camera.m */; };
+		2E25773014404EB200A3CB95 /* AbstractEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25772F14404EB200A3CB95 /* AbstractEntity.m */; };
 		3BA212E01422F403003CF839 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA212DF1422F403003CF839 /* UIKit.framework */; };
 		3BA212E21422F403003CF839 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA212E11422F403003CF839 /* Foundation.framework */; };
 		3BA212E41422F403003CF839 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA212E31422F403003CF839 /* CoreGraphics.framework */; };
@@ -70,7 +76,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2EBF8637143D1B69003CAA61 /* CommonOpenGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonOpenGL.h; sourceTree = "<group>"; };
+		2E25771014404DF600A3CB95 /* CommonOpenGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonOpenGL.h; sourceTree = "<group>"; };
+		2E25771A14404E3A00A3CB95 /* Map3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Map3D.h; sourceTree = "<group>"; };
+		2E25771B14404E3A00A3CB95 /* Map3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Map3D.m; sourceTree = "<group>"; };
+		2E25771E14404E5100A3CB95 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
+		2E25771F14404E5700A3CB95 /* Director.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Director.h; sourceTree = "<group>"; };
+		2E25772014404E5700A3CB95 /* Director.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Director.m; sourceTree = "<group>"; };
+		2E25772314404E8000A3CB95 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		2E25772414404E8000A3CB95 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		2E25772614404E8800A3CB95 /* AbstractScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractScene.h; sourceTree = "<group>"; };
+		2E25772714404E8800A3CB95 /* AbstractScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractScene.m; sourceTree = "<group>"; };
+		2E25772B14404EA200A3CB95 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		2E25772C14404EA200A3CB95 /* Camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Camera.m; sourceTree = "<group>"; };
+		2E25772E14404EB200A3CB95 /* AbstractEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractEntity.h; sourceTree = "<group>"; };
+		2E25772F14404EB200A3CB95 /* AbstractEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractEntity.m; sourceTree = "<group>"; };
 		3BA212DB1422F402003CF839 /* EG-TD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EG-TD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA212DF1422F403003CF839 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3BA212E11422F403003CF839 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -190,10 +209,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E25770F14404DDB00A3CB95 /* Graphic Engine */ = {
+			isa = PBXGroup;
+			children = (
+				2E25771914404E2A00A3CB95 /* 3D Map */,
+			);
+			name = "Graphic Engine";
+			sourceTree = "<group>";
+		};
+		2E25771914404E2A00A3CB95 /* 3D Map */ = {
+			isa = PBXGroup;
+			children = (
+				2E25771A14404E3A00A3CB95 /* Map3D.h */,
+				2E25771B14404E3A00A3CB95 /* Map3D.m */,
+			);
+			name = "3D Map";
+			sourceTree = "<group>";
+		};
+		2E25771D14404E4000A3CB95 /* Singleton Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2E25771F14404E5700A3CB95 /* Director.h */,
+				2E25772014404E5700A3CB95 /* Director.m */,
+				2E25771E14404E5100A3CB95 /* SynthesizeSingleton.h */,
+			);
+			name = "Singleton Classes";
+			sourceTree = "<group>";
+		};
+		2E25772214404E7300A3CB95 /* Game Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				2E25772614404E8800A3CB95 /* AbstractScene.h */,
+				2E25772714404E8800A3CB95 /* AbstractScene.m */,
+				2E25772314404E8000A3CB95 /* GameScene.h */,
+				2E25772414404E8000A3CB95 /* GameScene.m */,
+			);
+			name = "Game Scenes";
+			sourceTree = "<group>";
+		};
+		2E25772914404E8B00A3CB95 /* Game Entities */ = {
+			isa = PBXGroup;
+			children = (
+				2E25772A14404E9500A3CB95 /* Active */,
+			);
+			name = "Game Entities";
+			sourceTree = "<group>";
+		};
+		2E25772A14404E9500A3CB95 /* Active */ = {
+			isa = PBXGroup;
+			children = (
+				2E25772E14404EB200A3CB95 /* AbstractEntity.h */,
+				2E25772F14404EB200A3CB95 /* AbstractEntity.m */,
+				2E25772B14404EA200A3CB95 /* Camera.h */,
+				2E25772C14404EA200A3CB95 /* Camera.m */,
+			);
+			name = Active;
+			sourceTree = "<group>";
+		};
 		2EBF8636143D1B32003CAA61 /* Common Files */ = {
 			isa = PBXGroup;
 			children = (
-				2EBF8637143D1B69003CAA61 /* CommonOpenGL.h */,
+				2E25771014404DF600A3CB95 /* CommonOpenGL.h */,
 			);
 			name = "Common Files";
 			sourceTree = "<group>";
@@ -201,6 +277,10 @@
 		3BA212D01422F402003CF839 = {
 			isa = PBXGroup;
 			children = (
+				2E25772914404E8B00A3CB95 /* Game Entities */,
+				2E25772214404E7300A3CB95 /* Game Scenes */,
+				2E25771D14404E4000A3CB95 /* Singleton Classes */,
+				2E25770F14404DDB00A3CB95 /* Graphic Engine */,
 				2EBF8636143D1B32003CAA61 /* Common Files */,
 				3BA2138D1422F6B7003CF839 /* CFNetwork.framework */,
 				3BA2138B1422F69B003CF839 /* libxml2.dylib */,
@@ -609,6 +689,12 @@
 				3BA213611422F657003CF839 /* INFSmartFoxEntities.m in Sources */,
 				3BA213621422F657003CF839 /* INFSmartFoxObjectSerializer.m in Sources */,
 				3BB70BDC143FA75900E51BD0 /* MenuViewController.m in Sources */,
+				2E25771C14404E3A00A3CB95 /* Map3D.m in Sources */,
+				2E25772114404E5700A3CB95 /* Director.m in Sources */,
+				2E25772514404E8000A3CB95 /* GameScene.m in Sources */,
+				2E25772814404E8800A3CB95 /* AbstractScene.m in Sources */,
+				2E25772D14404EA200A3CB95 /* Camera.m in Sources */,
+				2E25773014404EB200A3CB95 /* AbstractEntity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
