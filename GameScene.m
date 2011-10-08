@@ -8,15 +8,12 @@
 
 #import "GameScene.h"
 #import "Camera.h"
-#import "OpenGLTexture3D.h"
-#import "Sand.h"
 
 @implementation GameScene
 
 @synthesize gameMap;
 @synthesize xDifference;
 @synthesize yDifference;
-@synthesize texture;
 @synthesize _location;
 - (id)init {
 	
@@ -32,11 +29,7 @@
         gameCamera = [[Camera alloc] initWithTileLocation:Vector3fMake(0,-20,40)];
         xDifference = 0;
         yDifference = 0;
-        
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"Sand" ofType:@"jpg"];
-        OpenGLTexture3D *newTexture = [[OpenGLTexture3D alloc] initWithFilename:path width:512 height:512];
-        self.texture = newTexture;
-        [newTexture release];
+
     }
 	
 	return self;
@@ -81,29 +74,6 @@
 
 - (void)render {
     
-    [texture bind];
-  /*  glEnableClientState(GL_VERTEX_ARRAY);
-    glEnableClientState(GL_NORMAL_ARRAY);
-    glEnableClientState(GL_TEXTURE_COORD_ARRAY);
-    glEnable(GL_TEXTURE_2D);
-    glEnable(GL_BLEND);
-    
-    [texture bind];
-    glLoadIdentity();
- //   glTranslatef(0.0, 0.0, -5.0);
-   // glRotatef(rot, 1.0, 1.0, 1.0);
-    glVertexPointer(3, GL_FLOAT, 0, SandVerts);
-    glNormalPointer(GL_FLOAT, 0, SandNormals);
-    glTexCoordPointer(2, GL_FLOAT, 0, SandTexCoords);
-    glDrawArrays(GL_TRIANGLES, 0, SandNumVerts);
-    //glDrawElements(GL_TRIANGLES, kCubeNumberOfVertices, GL_FLOAT, CubeFaces);
-    
-    glDisableClientState(GL_VERTEX_ARRAY);
-    glDisableClientState(GL_NORMAL_ARRAY);
-    glDisableClientState(GL_TEXTURE_COORD_ARRAY);
-    glDisable(GL_TEXTURE_2D);
-    glDisable(GL_BLEND);
-    */
     [gameMap render];
     [gameCamera render];
 

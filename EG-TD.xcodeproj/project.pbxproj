@@ -92,10 +92,10 @@
 		2E25772C14404EA200A3CB95 /* Camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Camera.m; sourceTree = "<group>"; };
 		2E25772E14404EB200A3CB95 /* AbstractEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractEntity.h; sourceTree = "<group>"; };
 		2E25772F14404EB200A3CB95 /* AbstractEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractEntity.m; sourceTree = "<group>"; };
-		2EF32C5D1440BE6600A85CF1 /* Sand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sand.h; sourceTree = "<group>"; };
 		2EF32C5F1440BE6A00A85CF1 /* Sand.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sand.jpg; sourceTree = "<group>"; };
 		2EF32C7A1440C2DB00A85CF1 /* OpenGLTexture3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLTexture3D.m; sourceTree = "<group>"; };
 		2EF32C7B1440C2DB00A85CF1 /* OpenGLTexture3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLTexture3D.h; sourceTree = "<group>"; };
+		2EF32C8D1440F90700A85CF1 /* Sand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sand.h; sourceTree = "<group>"; };
 		3BA212DB1422F402003CF839 /* EG-TD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EG-TD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA212DF1422F403003CF839 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3BA212E11422F403003CF839 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -284,8 +284,8 @@
 		2EF32C791440C2C300A85CF1 /* OpenGL ES Support */ = {
 			isa = PBXGroup;
 			children = (
-				2EF32C7A1440C2DB00A85CF1 /* OpenGLTexture3D.m */,
 				2EF32C7B1440C2DB00A85CF1 /* OpenGLTexture3D.h */,
+				2EF32C7A1440C2DB00A85CF1 /* OpenGLTexture3D.m */,
 			);
 			name = "OpenGL ES Support";
 			sourceTree = "<group>";
@@ -294,7 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				2EF32C5F1440BE6A00A85CF1 /* Sand.jpg */,
-				2EF32C5D1440BE6600A85CF1 /* Sand.h */,
+				2EF32C8D1440F90700A85CF1 /* Sand.h */,
 				3BA212E91422F403003CF839 /* EG-TD */,
 				2E25772914404E8B00A3CB95 /* Game Entities */,
 				2E25772214404E7300A3CB95 /* Game Scenes */,

@@ -55,8 +55,6 @@
         255,   0, 255, 255,
     };
     glPushMatrix();
-    
- 
     // Rotate the scene
     glRotatef(90, 0, 0, 1);
     
@@ -87,7 +85,7 @@
     
     // Enable the GL_COLOR_ARRAY so that OGL knows to use the colors from the squareColors array
     glEnableClientState(GL_COLOR_ARRAY);
-  
+
     glPopMatrix();
 }
 
