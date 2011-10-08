@@ -39,7 +39,7 @@
 #pragma mark Touch events
 
 - (void)updateWithTouchLocationBegan:(NSSet*)touches withEvent:(UIEvent*)event view:(UIView*)aView {
-	
+           NSLog(@"touch began pressed");
 
 }
 

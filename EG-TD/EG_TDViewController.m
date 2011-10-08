@@ -366,4 +366,25 @@
  
     
 }
+
+#pragma mark -
+#pragma mark Touches
+
+// Pass on all touch events to the game controller including a reference to this view so we can get data
+// about this view if necessary
+- (void)touchesBegan:(NSSet*)touches withEvent:(UIEvent*)event {
+	[[_director currentScene] updateWithTouchLocationBegan:touches withEvent:event view:(EAGLView *)self.view ];
+}
+
+
+- (void)touchesMoved:(NSSet*)touches withEvent:(UIEvent*)event {
+	[[_director currentScene] updateWithTouchLocationMoved:touches withEvent:event view:(EAGLView *)self.view];
+}
+
+
+- (void)touchesEnded:(NSSet*)touches withEvent:(UIEvent*)event {
+	[[_director currentScene] updateWithTouchLocationEnded:touches withEvent:event view:(EAGLView *)self.view];
+}
+
+
 @end

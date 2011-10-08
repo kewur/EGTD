@@ -19,7 +19,7 @@
 
 
 - (void)updateWithTouchLocationBegan:(NSSet*)touches withEvent:(UIEvent*)event view:(UIView*)aView {
-    NSLog(@"touch began pressed");
+ 
 }
 
 - (void)updateWithTouchLocationMoved:(NSSet*)touches withEvent:(UIEvent*)event view:(UIView*)aView {
