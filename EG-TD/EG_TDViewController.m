@@ -274,67 +274,11 @@
 {
     
     [(EAGLView *)self.view setFramebuffer];
-    
-    // Replace the implementation of this method to do your own custom drawing.
-    static const GLfloat squareVertices[] = {
-        -0.33f, -0.33f, 0.0f,
-        0.33f, -0.33f, 0.0f,
-        -0.33f,  0.33f, 0.0f,
-        0.33f,  0.33f, 0.0f
-    };
-    
-    static const GLubyte squareColors[] = {
-        255, 255,   0, 255,
-        0,   255, 255, 255,
-        0,     0,   0,   0,
-        255,   0, 255, 255,
-    };
-    
+  
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
-     
-    glMatrixMode(GL_MODELVIEW);
-    glLoadIdentity();
-    
-    // Position the camera back from the origin and slightly raised i.e. {0, 3, -6}
-    static GLfloat z = 0;
-    gluLookAt(-5, 0, -10, 0, 0, 0, 0, 1, 0);
-    z += 0.075f;
-    
-    // Rotate the scene
-    glRotatef(90, 0, 0, 1);
-    
-    // Set the color to be used when drawing the lines
-    glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
-    
-    // Disable the color array as we want the grid to be all white
-    glDisableClientState(GL_COLOR_ARRAY);
-    
-    // Enable the Vertex Array so that the vervices held in the vertex
-    // arrays that have been set up can be used to render the grid lines.
-    glEnableClientState(GL_VERTEX_ARRAY);
-    
-    // Point to the array defining the horizontal line vertices and render them
-    glVertexPointer(3, GL_FLOAT, 0, zFloorVertices);
-    glDrawArrays(GL_LINES, 0, 42);
-    
-    // Point to the array defining the vertical line vertices and render those as well
-    glVertexPointer(3, GL_FLOAT, 0, xFloorVertices);
-    glDrawArrays(GL_LINES, 0, 42);
-    
-    // Point to the array defining the vertices to draw the square
-    glVertexPointer(3, GL_FLOAT, 0, squareVertices);
-    
-    // Point to the array defining the colors at each vertex in the squareVertices
-    // array. This will give us a rainbow like fill to the square
-    glColorPointer(4, GL_UNSIGNED_BYTE, 0, squareColors);
-    
-    // Enable the GL_COLOR_ARRAY so that OGL knows to use the colors from the squareColors array
-    glEnableClientState(GL_COLOR_ARRAY);
-  
     [[_director currentScene] render];
 
-    
     [(EAGLView *)self.view presentFramebuffer];
 }
 

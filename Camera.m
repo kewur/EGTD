@@ -14,6 +14,8 @@
 @synthesize cameraX;
 @synthesize cameraY;
 @synthesize cameraZ;
+@synthesize xDifference;
+@synthesize yDifference;
 
 - (void)dealloc {
 
@@ -41,6 +43,7 @@
         // Set the players state to alive
         entityState = kEntity_Alive;
         
+
     }
     return self;
 }
@@ -50,23 +53,12 @@
 #pragma mark Update
 
 - (void)update:(GLfloat)aDelta {
-    
-    // If we do not have access to the currentscene then grab it
-    if(!_gotScene) {
-        _scene = (GameScene*)[_sharedDirector currentScene];
 
-        _gotScene = YES;
-    }
-    
-
-
-    
-    switch (entityState) {
-        case kEntity_Alive:
- 
-        default:
-            break;
-    }
+    _scene = (GameScene*)[_sharedDirector currentScene];
+    xDifference = [(GameScene*)[_sharedDirector currentScene]  xDifference];
+    yDifference = [(GameScene*)[_sharedDirector currentScene]  yDifference];
+    position.x -= yDifference*kMapAcceloremeter;
+    position.z -= xDifference*kMapAcceloremeter;
     
 }
 
@@ -74,7 +66,13 @@
 #pragma mark Render
 
 - (void)render {
+  
+    glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
     
+    glRotatef(90, 0, 0, 1);
+    gluLookAt(position.x, position.y, position.z, 0, 0, 0, 0, 1, 0);
+  
 }
 
 

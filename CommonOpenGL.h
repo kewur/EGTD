@@ -23,6 +23,10 @@
 // Macro which converts degrees into radians
 #define DEGREES_TO_RADIANS(__ANGLE__) ((__ANGLE__) / 180.0 * M_PI)
 
+
+//Map Change accelerometer
+#define kMapAcceloremeter 0.001
+
 #pragma mark -
 #pragma mark Enumerations
 

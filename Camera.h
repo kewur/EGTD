@@ -18,6 +18,9 @@
     float cameraY;
     float cameraZ;
     
+    float xDifference;
+    float yDifference;
+    
     float _cameraSpeed;
     GameScene *_scene;
 
@@ -27,8 +30,8 @@
 @property (nonatomic, assign) float cameraX;
 @property (nonatomic, assign) float cameraY;
 @property (nonatomic, assign) float cameraZ;
-
-
+@property (nonatomic, readonly) float xDifference;
+@property (nonatomic, readonly) float yDifference;
 - (id)initWithTileLocation:(EGVertex3D)startLocation;
 
 

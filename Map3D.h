@@ -19,6 +19,9 @@
     // The height of the map in tiles
     GLuint mapHeight;
 
+    // Floor Vertices
+    EGVertex3D zFloorVertices[81];
+    EGVertex3D xFloorVertices[81];
 }
 
 @property (nonatomic, readonly) GLuint mapWidth;
@@ -26,4 +29,6 @@
 
 //Initializes the map
 - (id)initMap3D;
+- (void)render;
+
 @end
