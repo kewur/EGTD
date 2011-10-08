@@ -14,6 +14,9 @@
 @synthesize cameraX;
 @synthesize cameraY;
 @synthesize cameraZ;
+@synthesize lookUpX;
+@synthesize lookUpY;
+@synthesize lookUpZ;
 @synthesize xDifference;
 @synthesize yDifference;
 
@@ -43,6 +46,9 @@
         // Set the players state to alive
         entityState = kEntity_Alive;
         
+        lookUpX = 0;
+        lookUpZ = 0;
+        
 
     }
     return self;
@@ -59,7 +65,8 @@
     yDifference = [(GameScene*)[_sharedDirector currentScene]  yDifference];
     position.x -= yDifference*kMapAcceloremeter;
     position.z -= xDifference*kMapAcceloremeter;
-    
+    lookUpZ -= xDifference*kMapAcceloremeter;
+    lookUpX -= yDifference*kMapAcceloremeter;
 }
 
 #pragma mark -
@@ -71,7 +78,7 @@
 	glLoadIdentity();
     
     glRotatef(90, 0, 0, 1);
-    gluLookAt(position.x, position.y, position.z, 0, 0, 0, 0, 1, 0);
+    gluLookAt(position.x, position.y, position.z, lookUpX,0 , lookUpZ, 0, 1, 0);
   
 }
 

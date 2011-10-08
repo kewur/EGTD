@@ -788,6 +788,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gurcan Yavuz (7GFJUKQ8SJ)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -795,7 +796,9 @@
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				"HEADER_SEARCH_PATHS[arch=*]" = "$(SDK_DIR)\"/usr/include/libxml2";
 				INFOPLIST_FILE = "EG-TD/EG-TD-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7E972024-1CB1-4499-A339-C98A56E5833E";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -804,13 +807,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gurcan Yavuz (7GFJUKQ8SJ)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EG-TD/EG-TD-Prefix.pch";
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				"HEADER_SEARCH_PATHS[arch=*]" = "$(SDK_DIR)\"/usr/include/libxml2";
 				INFOPLIST_FILE = "EG-TD/EG-TD-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7E972024-1CB1-4499-A339-C98A56E5833E";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

@@ -22,11 +22,11 @@
         // Grab an instance of our singleton classes
 		_sharedDirector = [Director sharedDirector];
         gameMap = [[Map3D alloc] initMap3D];
-        //Cameras first position x = -5 y = 0 z = -10
+        //Cameras first position x = 0 y = -20 z = 40
         //Y is decreasing to up dont switch y
-        //X is increasing with right
-        //Z is increasing with forward
-        gameCamera = [[Camera alloc] initWithTileLocation:Vector3fMake(-10,-20,+40)];
+        //X is increasing with LEFT not right
+        //Z is decreasing with forward
+        gameCamera = [[Camera alloc] initWithTileLocation:Vector3fMake(0,-20,40)];
         xDifference = 0;
         yDifference = 0;
 

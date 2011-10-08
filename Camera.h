@@ -18,6 +18,10 @@
     float cameraY;
     float cameraZ;
     
+    float lookUpX;
+    float lookUpY;
+    float lookUpZ;
+    
     float xDifference;
     float yDifference;
     
@@ -30,6 +34,9 @@
 @property (nonatomic, assign) float cameraX;
 @property (nonatomic, assign) float cameraY;
 @property (nonatomic, assign) float cameraZ;
+@property (nonatomic, assign)float lookUpX;
+@property (nonatomic, assign)float lookUpY;
+@property (nonatomic, assign)float lookUpZ;
 @property (nonatomic, readonly) float xDifference;
 @property (nonatomic, readonly) float yDifference;
 - (id)initWithTileLocation:(EGVertex3D)startLocation;
