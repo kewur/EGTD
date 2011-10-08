@@ -82,7 +82,7 @@
     
     // Set the initial game state
     [_director setCurrentSceneToSceneWithKey:@"game"];
-    [[_director currentScene] setSceneState:kSceneState_TransitionIn];
+    [[_director currentScene] setSceneState:kSceneState_Idle];
     
     
 }

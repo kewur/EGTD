@@ -43,8 +43,8 @@ enum {
 	kGameState_Paused,
 	kGameState_Loading,
 	kSceneState_Idle,
-	kSceneState_TransitionIn,
-	kSceneState_TransitionOut,
+	//kSceneState_TransitionIn,
+	//kSceneState_TransitionOut,
 	kSceneState_Running,
 	kSceneState_Paused
 };

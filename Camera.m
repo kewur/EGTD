@@ -79,6 +79,8 @@
     
     glRotatef(90, 0, 0, 1);
     gluLookAt(position.x, position.y, position.z, lookUpX,0 , lookUpZ, 0, 1, 0);
+
+
   
 }
 
