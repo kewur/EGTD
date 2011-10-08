@@ -31,19 +31,7 @@
 
 - (void)updateWithDelta:(GLfloat)theDelta {
     
-    //NSLog(@"%f",theDelta);
-	switch (sceneState) {
-		case kSceneState_Running:
-
-			
-			break;
-			
-		case kSceneState_TransitionIn:
-
-			
-		default:
-			break;
-	}
+ 
     
 }
 
@@ -67,6 +55,7 @@
 
 - (void)render {
        
+   
     //glPushMatrix();
     
     // Pop the matrix back off the stack which will undo the glTranslate we did above

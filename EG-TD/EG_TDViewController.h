@@ -14,8 +14,8 @@
 #import <OpenGLES/ES1/glext.h>
 #import <OpenGLES/ES2/gl.h>
 #import <OpenGLES/ES2/glext.h>
-
-#import "CommonOpenGL.h"
+#import "Director.h"
+#import "GameScene.h"
 
 @interface EG_TDViewController : UIViewController {
 @private
@@ -32,6 +32,9 @@
     // Floor Vertices
     EGVertex3D zFloorVertices[81];
     EGVertex3D xFloorVertices[81];
+    
+    // Shared game state
+	Director *_director;
     
 }
 

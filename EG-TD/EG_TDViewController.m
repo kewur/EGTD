@@ -9,6 +9,7 @@
 #import <QuartzCore/QuartzCore.h>
 
 #import "EG_TDViewController.h"
+#import "CommonOpenGL.h"
 #import "EAGLView.h"
 //TEST
 
@@ -48,6 +49,8 @@
     }
    
   */
+   
+
     if (!aContext)
         NSLog(@"Failed to create ES context");
     else if (![EAGLContext setCurrentContext:aContext])
@@ -68,6 +71,20 @@
     
     // Init game
     [self initGame];
+    
+    //These initilasiers must be below under the init for memory problems
+    _director = [Director sharedDirector];
+    
+    // Initialize the game states and add them to the Director class
+    AbstractScene *scene = [[GameScene alloc] init];
+    [_director addSceneWithKey:@"game" scene:scene];
+    [scene release];
+    
+    // Set the initial game state
+    [_director setCurrentSceneToSceneWithKey:@"game"];
+    [[_director currentScene] setSceneState:kSceneState_TransitionIn];
+    
+    
 }
 
 - (void)dealloc
@@ -82,6 +99,7 @@
     if ([EAGLContext currentContext] == context)
         [EAGLContext setCurrentContext:nil];
     
+    [_director dealloc];
     [context release];
     
     [super dealloc];
@@ -248,7 +266,7 @@
 
 - (void)updateWithDelta:(float)aDelta
 {
-    angle += 0.5f;
+   [[_director currentScene] updateWithDelta:aDelta];
 }
 
 
@@ -274,6 +292,7 @@
     
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
+     
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
     
@@ -312,7 +331,9 @@
     
     // Enable the GL_COLOR_ARRAY so that OGL knows to use the colors from the squareColors array
     glEnableClientState(GL_COLOR_ARRAY);
-    
+  
+    [[_director currentScene] render];
+
     
     [(EAGLView *)self.view presentFramebuffer];
 }
@@ -342,6 +363,7 @@
     glEnable(GL_DEPTH_TEST);
     glDepthFunc(GL_LESS);
     glDepthMask(GL_TRUE);
+ 
     
 }
 @end

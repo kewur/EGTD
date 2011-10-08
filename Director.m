@@ -22,6 +22,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(Director);
 
 
 - (id)init {
+    
 	// Initialize the arrays to be used within the state manager
 	_scenes = [[NSMutableDictionary alloc] init];
 	currentScene = nil;
@@ -37,13 +38,16 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(Director);
 
 - (BOOL)setCurrentSceneToSceneWithKey:(NSString*)aSceneKey {
 	if(![_scenes objectForKey:aSceneKey]) {
-		if(DEBUG) NSLog(@"ERROR: Scene with key '%@' not found.", aSceneKey);
-        return NO;
+            
+             return NO;
     }
 	
     currentScene = [_scenes objectForKey:aSceneKey];
-	[currentScene setSceneAlpha:0.0f];
-	[currentScene setSceneState:kSceneState_TransitionIn];
+   
+	[currentScene setSceneAlpha:1.0f];
+    
+	[currentScene setSceneState:kGameState_Running];
+   
 
     return YES;
 }
