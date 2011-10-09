@@ -259,3 +259,30 @@ static inline void gluLookAt(GLfloat eyex, GLfloat eyey, GLfloat eyez,
 	glTranslatef(-eyex, -eyey, -eyez);
 	
 }
+
+
+
+
+//FOR BUILT MENU ORTHOGONAL PROJECTIONS
+static inline void switchToOrtho ()
+{
+   CGRect bounds=  [[UIScreen mainScreen] bounds];
+    
+    glDisable(GL_DEPTH_TEST);
+    glMatrixMode(GL_PROJECTION);
+    glPushMatrix();
+    glLoadIdentity();
+    glOrthof(0, bounds.size.width, 0, bounds.size.height, -5, 1);       
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
+}
+
+//RETURN THE MAIN GAME SCREEN
+static inline void switchBackToFrustum() 
+{
+    glEnable(GL_DEPTH_TEST);
+    glMatrixMode(GL_PROJECTION);
+    glPopMatrix();
+    glMatrixMode(GL_MODELVIEW);
+}
+

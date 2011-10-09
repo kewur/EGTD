@@ -184,32 +184,7 @@
 
 - (void)initGame
 {
-    // Generate the floors vertices
-    GLfloat z = -20.0f;
-    for (uint index=0; index < 81; index += 2) {
-        zFloorVertices[index].x = -20.0;
-        zFloorVertices[index].y = -1;
-        zFloorVertices[index].z = z;
-        
-        zFloorVertices[index+1].x = 20.0;
-        zFloorVertices[index+1].y = -1;
-        zFloorVertices[index+1].z = z;
-        
-        z += 2.0f;
-    }
-    
-    GLfloat x = -20.0f;
-    for (uint index=0; index < 81; index += 2) {
-        xFloorVertices[index].x = x;
-        xFloorVertices[index].y = -1;
-        xFloorVertices[index].z = -20.0f;
-        
-        xFloorVertices[index+1].x = x;
-        xFloorVertices[index+1].y = -1;
-        xFloorVertices[index+1].z = 20;
-        
-        x += 2.0f;
-    }
+    //We put map into Map3D
   
 }
 

@@ -8,7 +8,6 @@
 
 #import "Map3D.h"
 
-
 #pragma mark -
 #pragma mark Private interface
 
@@ -55,7 +54,7 @@
         255,   0, 255, 255,
     };
     glPushMatrix();
-    // Rotate the scene
+
     glRotatef(90, 0, 0, 1);
     
     // Set the color to be used when drawing the lines
@@ -86,6 +85,24 @@
     // Enable the GL_COLOR_ARRAY so that OGL knows to use the colors from the squareColors array
     glEnableClientState(GL_COLOR_ARRAY);
 
+/*    
+    // Rotate the scene
+    glPushMatrix();
+    glTranslatef(0, -5, 0);
+    glRotatef(90, 0, 0, 1);
+     glEnableClientState(GL_VERTEX_ARRAY);
+     glEnableClientState(GL_TEXTURE_COORD_ARRAY);
+     glEnableClientState(GL_NORMAL_ARRAY);
+     glVertexPointer(3, GL_FLOAT, sizeof(vertexDataTextured), &MeshVertexData[0].vertex);
+     glNormalPointer(GL_FLOAT, sizeof(vertexDataTextured), &MeshVertexData[0].normal);
+     glTexCoordPointer(2, GL_FLOAT, sizeof(vertexDataTextured), &MeshVertexData[0].texCoord);
+     glDrawArrays(GL_TRIANGLES, 0, 1000);
+     glDisableClientState(GL_VERTEX_ARRAY);
+     glDisableClientState(GL_TEXTURE_COORD_ARRAY);
+     glDisableClientState(GL_NORMAL_ARRAY);
+    glPopMatrix();
+*/
+    
     glPopMatrix();
 }
 
