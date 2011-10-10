@@ -22,6 +22,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    ConnectedSFS = false;
+    
     self.window.rootViewController = self.viewController;
     return YES;
 }
@@ -36,6 +38,52 @@
      */
     [self.viewController stopAnimation];
 }
+
+-(void) onLogin:(INFSmartFoxSFSEvent *)evt
+{
+    
+    
+    if ([[evt.params objectForKey:@"success"] boolValue])
+    {
+        
+    }
+    
+    else
+    {
+        NSLog(@" FAILL to LOG IN");
+    }
+    
+    
+}
+
+
+
+
+-(void) onConnectionLost:(INFSmartFoxSFSEvent *)evt
+{
+    
+    ConnectedSFS = false;
+    
+}
+
+
+-(void) ConnectToSFS:(NSString*) UserId
+{
+    
+    self->mUserID = [[NSString stringWithFormat:@"u%s", [UserId UTF8String]] retain]; 
+    
+    if(ConnectedSFS == false)
+    {
+        [INFSmartFoxObjectSerializer setDebug:YES];
+        
+        mClient = [[INFSmartFoxiPhoneClient iPhoneClient:YES delegate:self] retain];
+        
+        [mClient loadConfig:@"config" autoConnect:YES]; 
+        
+    }
+    
+}
+
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
