@@ -18,6 +18,8 @@
 @synthesize window=_window;
 @synthesize MenuviewController;
 
+@synthesize facebook;
+
 @synthesize viewController=_viewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -25,8 +27,31 @@
     // Override point for customization after application launch.
     ConnectedSFS = false;
     
+    
+    
     self.window.rootViewController = self.viewController;
     return YES;
+}
+
+-(void) ConnectToFB
+{
+    facebook = [[Facebook alloc] initWithAppId:@"144988148933060" andDelegate:self];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if ([defaults objectForKey:@"FBAccessTokenKey"] 
+        && [defaults objectForKey:@"FBExpirationDateKey"]) {
+        facebook.accessToken = [defaults objectForKey:@"FBAccessTokenKey"];
+        facebook.expirationDate = [defaults objectForKey:@"FBExpirationDateKey"];
+    }
+    NSArray* permissions =  [[NSArray arrayWithObjects:
+                              @"email", @"read_stream", nil] retain];
+    
+    if (![facebook isSessionValid]) {
+        [facebook authorize:permissions]; //  delegate:self] sildim
+    }
+    
+    [permissions release];
+    
 }
 
 -(void) onObjectReceived:(INFSmartFoxSFSEvent *)evt
@@ -37,6 +62,7 @@
     
     
 }
+
 
 -(void) onJoinRoom:(INFSmartFoxSFSEvent *)evt
 {

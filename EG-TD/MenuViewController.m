@@ -25,7 +25,7 @@
 
 -(IBAction) Loginbuttonpressed
 {
-    
+   // [(EG_TDAppDelegate*)[[UIApplication sharedApplication] delegate] ConnectToFB]; 
     
 }
 

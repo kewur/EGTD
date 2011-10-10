@@ -13,24 +13,31 @@
 #import "INFSmartFoxObjectSerializer.h"
 #import "INFSmartFoxRoom.h"
 #import "MenuViewController.h"
+#import "FBConnect.h"
 
 //osman
 @class EG_TDViewController;
 
-@interface EG_TDAppDelegate : NSObject <UIApplicationDelegate, INFSmartFoxISFSEvents> {
+@interface EG_TDAppDelegate : NSObject <UIApplicationDelegate, INFSmartFoxISFSEvents, FBSessionDelegate> // 
+{
     
     INFSmartFoxiPhoneClient* mClient;
     bool ConnectedSFS;
     INFSmartFoxRoom *mRoom;
     NSString* mUserID;
+    Facebook* facebook;
 
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 
 @property (nonatomic, retain) IBOutlet EG_TDViewController *viewController;
-@property (nonatomic, retain) IBOutlet MenuViewController *MenuviewController;
+@property (nonatomic, retain) IBOutlet MenuViewController *MenuviewController; 
+
+
+@property (nonatomic, retain) Facebook *facebook;
 
 -(void) ConnectToSFS: (NSString*) UserID;
+-(void) ConnectToFB;
 
 @end
