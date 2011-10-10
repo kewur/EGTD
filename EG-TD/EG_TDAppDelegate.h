@@ -12,6 +12,7 @@
 #import "INFSmartFoxiPhoneClient.h"
 #import "INFSmartFoxObjectSerializer.h"
 #import "INFSmartFoxRoom.h"
+#import "MenuViewController.h"
 
 //osman
 @class EG_TDViewController;
@@ -28,6 +29,7 @@
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 
 @property (nonatomic, retain) IBOutlet EG_TDViewController *viewController;
+@property (nonatomic, retain) IBOutlet MenuViewController *MenuviewController;
 
 -(void) ConnectToSFS: (NSString*) UserID;
 

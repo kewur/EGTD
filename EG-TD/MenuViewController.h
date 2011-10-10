@@ -13,4 +13,9 @@
     
 }
 
+@property (assign) IBOutlet UIButton* LoginButton;
+
+
+-(IBAction) Loginbuttonpressed;
+
 @end

@@ -11,6 +11,8 @@
 
 @implementation MenuViewController
 
+@synthesize LoginButton;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -19,6 +21,20 @@
     }
     return self;
 }
+
+
+-(IBAction) Loginbuttonpressed
+{
+    
+    
+}
+
+
+
+
+
+
+
 
 - (void)dealloc
 {
@@ -51,7 +67,7 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft);
 }
 
 @end

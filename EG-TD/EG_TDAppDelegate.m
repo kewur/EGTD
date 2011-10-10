@@ -16,6 +16,7 @@
 
 
 @synthesize window=_window;
+@synthesize MenuviewController;
 
 @synthesize viewController=_viewController;
 
@@ -28,6 +29,23 @@
     return YES;
 }
 
+-(void) onObjectReceived:(INFSmartFoxSFSEvent *)evt
+{
+    
+    NSLog(@"Object received");
+    
+    
+    
+}
+
+-(void) onJoinRoom:(INFSmartFoxSFSEvent *)evt
+{
+    
+    [self->_viewController RoomVariableAction:[self->mRoom getVariables]];
+    
+    
+    
+}
 
 
 - (void)applicationWillResignActive:(UIApplication *)application

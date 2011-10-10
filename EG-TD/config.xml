@@ -1,0 +1,19 @@
+<SmartFoxTrisConfig>
+    
+    <ip>127.0.0.1</ip>
+    
+    <port>9339</port>
+    
+    <blueBoxIpAddress>localhost</blueBoxIpAddress>
+    
+    <blueBoxPort>8080</blueBoxPort>
+    
+    <smartConnect>true</smartConnect>
+    
+    <httpPort>8080</httpPort>
+    
+    <httpPollSpeed>750</httpPollSpeed>
+    
+    <zone>towerDefence</zone>
+    
+</SmartFoxTrisConfig>
