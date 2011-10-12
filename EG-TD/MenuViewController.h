@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-//#import "EG_TDAppDelegate.h"
 
 
 @interface MenuViewController : UIViewController {

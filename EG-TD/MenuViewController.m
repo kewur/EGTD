@@ -7,6 +7,7 @@
 //
 //deneme
 #import "MenuViewController.h"
+#import "EG_TDAppDelegate.h"
 
 
 @implementation MenuViewController
@@ -25,7 +26,7 @@
 
 -(IBAction) Loginbuttonpressed
 {
-   // [(EG_TDAppDelegate*)[[UIApplication sharedApplication] delegate] ConnectToFB]; 
+    [(EG_TDAppDelegate*)[[UIApplication sharedApplication] delegate] ConnectToFB]; 
     
 }
 
@@ -38,6 +39,7 @@
 
 - (void)dealloc
 {
+    [LoginButton release];
     [super dealloc];
 }
 
@@ -53,6 +55,7 @@
 
 - (void)viewDidLoad
 {
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }

@@ -32,7 +32,7 @@
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 
 @property (nonatomic, retain) IBOutlet EG_TDViewController *viewController;
-@property (nonatomic, retain) IBOutlet MenuViewController *MenuviewController; 
+@property (nonatomic, retain) IBOutlet MenuViewController *menuViewController; 
 
 
 @property (nonatomic, retain) Facebook *facebook;

@@ -40,6 +40,8 @@
 
 - (void)awakeFromNib
 {
+    NSLog(@"11");
+
    // EAGLContext *aContext = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
     
     //To work on iPhone 3G we must make it opengl ES version 1 
@@ -155,7 +157,7 @@
 
 - (void)setAnimationFrameInterval:(NSInteger)frameInterval
 {
-    /*
+       /*
 	 Frame interval defines how many display frames must pass between each time the display link fires.
 	 The display link will only fire 30 times a second when the frame internal is two on a display that refreshes 60 times a second. The default frame interval setting of one will fire 60 times a second when the display refreshes at 60 times a second. A frame interval setting of less than one results in undefined behavior.
 	 */
