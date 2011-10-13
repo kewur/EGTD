@@ -9,10 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "Director.h"
 #import "Map3D.h"
+#import "ResourceManager.h"
+#import "Image.h"
 
 @interface AbstractScene : NSObject {
     
     Director        *_sharedDirector;
+    ResourceManager *_sharedResourceManager;
 	CGRect          _screenBounds;
 	uint            sceneState;
 	float           sceneAlpha;

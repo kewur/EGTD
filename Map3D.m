@@ -83,7 +83,7 @@
     glColorPointer(4, GL_UNSIGNED_BYTE, 0, squareColors);
     
     // Enable the GL_COLOR_ARRAY so that OGL knows to use the colors from the squareColors array
-    glEnableClientState(GL_COLOR_ARRAY);
+    //glEnableClientState(GL_COLOR_ARRAY);
 
 /*    
     // Rotate the scene

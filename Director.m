@@ -11,7 +11,7 @@
 
 @implementation Director
 
-
+@synthesize currentlyBoundTexture;
 @synthesize currentGameState;
 @synthesize currentScene;
 @synthesize globalAlpha;

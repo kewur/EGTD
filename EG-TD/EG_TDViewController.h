@@ -36,6 +36,9 @@
     // Shared game state
 	Director *_director;
     
+    // Shared resource manager
+	ResourceManager *_resourceManager;
+    
 }
 
 @property (readonly, nonatomic, getter=isAnimating) BOOL animating;

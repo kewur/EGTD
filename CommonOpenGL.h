@@ -6,6 +6,8 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
+#import <OpenGLES/ES1/gl.h>
+
 #pragma mark -
 #pragma mark Debug
 

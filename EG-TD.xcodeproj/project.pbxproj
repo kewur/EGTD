@@ -13,6 +13,13 @@
 		2E25772814404E8800A3CB95 /* AbstractScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25772714404E8800A3CB95 /* AbstractScene.m */; };
 		2E25772D14404EA200A3CB95 /* Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25772C14404EA200A3CB95 /* Camera.m */; };
 		2E25773014404EB200A3CB95 /* AbstractEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25772F14404EB200A3CB95 /* AbstractEntity.m */; };
+		2E7561D114477BE900956F6E /* TowerMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7561D014477BE900956F6E /* TowerMenu.m */; };
+		2E7561E4144795CF00956F6E /* Texture2D.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7561E3144795CF00956F6E /* Texture2D.m */; };
+		2E7561E8144796C600956F6E /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7561E7144796C600956F6E /* Image.m */; };
+		2E7561EB1447987200956F6E /* ResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7561EA1447987200956F6E /* ResourceManager.m */; };
+		2E7561F41447A35800956F6E /* towerMenuBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E7561F21447A35800956F6E /* towerMenuBackground.png */; };
+		2E7561F51447A35800956F6E /* towerMenuBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E7561F31447A35800956F6E /* towerMenuBackground@2x.png */; };
+		2E7561F71447A6FA00956F6E /* joypad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E7561F61447A6FA00956F6E /* joypad.png */; };
 		2EF32C7C1440C2DB00A85CF1 /* OpenGLTexture3D.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF32C7A1440C2DB00A85CF1 /* OpenGLTexture3D.m */; };
 		3BA212E01422F403003CF839 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA212DF1422F403003CF839 /* UIKit.framework */; };
 		3BA212E21422F403003CF839 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA212E11422F403003CF839 /* Foundation.framework */; };
@@ -105,6 +112,17 @@
 		2E25772C14404EA200A3CB95 /* Camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Camera.m; sourceTree = "<group>"; };
 		2E25772E14404EB200A3CB95 /* AbstractEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractEntity.h; sourceTree = "<group>"; };
 		2E25772F14404EB200A3CB95 /* AbstractEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractEntity.m; sourceTree = "<group>"; };
+		2E7561CF14477BE900956F6E /* TowerMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TowerMenu.h; sourceTree = "<group>"; };
+		2E7561D014477BE900956F6E /* TowerMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TowerMenu.m; sourceTree = "<group>"; };
+		2E7561E2144795CF00956F6E /* Texture2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Texture2D.h; sourceTree = "<group>"; };
+		2E7561E3144795CF00956F6E /* Texture2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Texture2D.m; sourceTree = "<group>"; };
+		2E7561E6144796C600956F6E /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		2E7561E7144796C600956F6E /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
+		2E7561E91447987200956F6E /* ResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceManager.h; sourceTree = "<group>"; };
+		2E7561EA1447987200956F6E /* ResourceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceManager.m; sourceTree = "<group>"; };
+		2E7561F21447A35800956F6E /* towerMenuBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = towerMenuBackground.png; sourceTree = "<group>"; };
+		2E7561F31447A35800956F6E /* towerMenuBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "towerMenuBackground@2x.png"; sourceTree = "<group>"; };
+		2E7561F61447A6FA00956F6E /* joypad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joypad.png; sourceTree = "<group>"; };
 		2EF32C7A1440C2DB00A85CF1 /* OpenGLTexture3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLTexture3D.m; sourceTree = "<group>"; };
 		2EF32C7B1440C2DB00A85CF1 /* OpenGLTexture3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLTexture3D.h; sourceTree = "<group>"; };
 		3BA212DB1422F402003CF839 /* EG-TD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EG-TD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -244,6 +262,7 @@
 		2E25770F14404DDB00A3CB95 /* Graphic Engine */ = {
 			isa = PBXGroup;
 			children = (
+				2E7561E5144796BB00956F6E /* Image */,
 				2EF32C791440C2C300A85CF1 /* OpenGL ES Support */,
 				2E25771914404E2A00A3CB95 /* 3D Map */,
 			);
@@ -265,6 +284,8 @@
 				2E25771F14404E5700A3CB95 /* Director.h */,
 				2E25772014404E5700A3CB95 /* Director.m */,
 				2E25771E14404E5100A3CB95 /* SynthesizeSingleton.h */,
+				2E7561E91447987200956F6E /* ResourceManager.h */,
+				2E7561EA1447987200956F6E /* ResourceManager.m */,
 			);
 			name = "Singleton Classes";
 			sourceTree = "<group>";
@@ -283,6 +304,7 @@
 		2E25772914404E8B00A3CB95 /* Game Entities */ = {
 			isa = PBXGroup;
 			children = (
+				2E7561CE14477BC700956F6E /* Tower Menu */,
 				2E25772A14404E9500A3CB95 /* Active */,
 			);
 			name = "Game Entities";
@@ -299,6 +321,42 @@
 			name = Active;
 			sourceTree = "<group>";
 		};
+		2E7561CE14477BC700956F6E /* Tower Menu */ = {
+			isa = PBXGroup;
+			children = (
+				2E7561CF14477BE900956F6E /* TowerMenu.h */,
+				2E7561D014477BE900956F6E /* TowerMenu.m */,
+			);
+			name = "Tower Menu";
+			sourceTree = "<group>";
+		};
+		2E7561E5144796BB00956F6E /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				2E7561E6144796C600956F6E /* Image.h */,
+				2E7561E7144796C600956F6E /* Image.m */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		2E7561EC14479D9A00956F6E /* Game Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2E7561ED14479DB500956F6E /* Images */,
+			);
+			name = "Game Resources";
+			sourceTree = "<group>";
+		};
+		2E7561ED14479DB500956F6E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2E7561F61447A6FA00956F6E /* joypad.png */,
+				2E7561F21447A35800956F6E /* towerMenuBackground.png */,
+				2E7561F31447A35800956F6E /* towerMenuBackground@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		2EBF8636143D1B32003CAA61 /* Common Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -310,6 +368,8 @@
 		2EF32C791440C2C300A85CF1 /* OpenGL ES Support */ = {
 			isa = PBXGroup;
 			children = (
+				2E7561E2144795CF00956F6E /* Texture2D.h */,
+				2E7561E3144795CF00956F6E /* Texture2D.m */,
 				2EF32C7B1440C2DB00A85CF1 /* OpenGLTexture3D.h */,
 				2EF32C7A1440C2DB00A85CF1 /* OpenGLTexture3D.m */,
 			);
@@ -319,9 +379,10 @@
 		3BA212D01422F402003CF839 = {
 			isa = PBXGroup;
 			children = (
-				3BB70E9F1442F76D00E51BD0 /* src */,
-				3BB70E9D1442F70700E51BD0 /* libsqlite3.dylib */,
 				3BA212E91422F403003CF839 /* EG-TD */,
+				3BB70E9D1442F70700E51BD0 /* libsqlite3.dylib */,
+				3BB70E9F1442F76D00E51BD0 /* src */,
+				2E7561EC14479D9A00956F6E /* Game Resources */,
 				2E25772914404E8B00A3CB95 /* Game Entities */,
 				2E25772214404E7300A3CB95 /* Game Scenes */,
 				2E25771D14404E4000A3CB95 /* Singleton Classes */,
@@ -713,6 +774,9 @@
 				3BB70C401442E5FD00E51BD0 /* config.xml in Resources */,
 				3BB70C431442EAC700E51BD0 /* EGTDmain.jpg in Resources */,
 				3BB70EC01442F76D00E51BD0 /* FBDialog.bundle in Resources */,
+				2E7561F41447A35800956F6E /* towerMenuBackground.png in Resources */,
+				2E7561F51447A35800956F6E /* towerMenuBackground@2x.png in Resources */,
+				2E7561F71447A6FA00956F6E /* joypad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -792,6 +856,10 @@
 				3BB70EC11442F76D00E51BD0 /* FBDialog.m in Sources */,
 				3BB70EC21442F76D00E51BD0 /* FBLoginDialog.m in Sources */,
 				3BB70EC31442F76D00E51BD0 /* FBRequest.m in Sources */,
+				2E7561D114477BE900956F6E /* TowerMenu.m in Sources */,
+				2E7561E4144795CF00956F6E /* Texture2D.m in Sources */,
+				2E7561E8144796C600956F6E /* Image.m in Sources */,
+				2E7561EB1447987200956F6E /* ResourceManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

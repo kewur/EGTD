@@ -42,7 +42,7 @@
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
 			<object class="IBUIViewController" id="692423605">
-				<string key="IBUINibName">MenuViewController</string>
+				<string key="IBUINibName">EG_TDViewController</string>
 				<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
 					<int key="IBUIInterfaceOrientation">1</int>
 					<int key="interfaceOrientation">1</int>
@@ -156,7 +156,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>UIApplication</string>
 					<string>UIResponder</string>
-					<string>MenuViewController</string>
+					<string>EG_TDViewController</string>
 					<string>{{415, 586}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSMutableDictionary">
@@ -194,7 +194,7 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>MenuviewController</string>
+							<string>menuViewController</string>
 							<string>viewController</string>
 							<string>window</string>
 						</object>
@@ -209,14 +209,14 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>MenuviewController</string>
+							<string>menuViewController</string>
 							<string>viewController</string>
 							<string>window</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBToOneOutletInfo">
-								<string key="name">MenuviewController</string>
+								<string key="name">menuViewController</string>
 								<string key="candidateClassName">MenuViewController</string>
 							</object>
 							<object class="IBToOneOutletInfo">

@@ -63,6 +63,8 @@
     _scene = (GameScene*)[_sharedDirector currentScene];
     xDifference = [(GameScene*)[_sharedDirector currentScene]  xDifference];
     yDifference = [(GameScene*)[_sharedDirector currentScene]  yDifference];
+    cameraX = [(GameScene*)[_sharedDirector currentScene]  touched];
+  //  NSLog(@"%f",cameraX);
     position.x -= yDifference*kMapAcceloremeter;
     position.z -= xDifference*kMapAcceloremeter;
     lookUpZ -= xDifference*kMapAcceloremeter;

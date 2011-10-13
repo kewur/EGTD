@@ -76,6 +76,7 @@
     
     //These initilasiers must be below under the init for memory problems
     _director = [Director sharedDirector];
+    _resourceManager = [ResourceManager sharedResourceManager];
     
     // Initialize the game states and add them to the Director class
     AbstractScene *scene = [[GameScene alloc] init];
@@ -100,7 +101,7 @@
     // Tear down context.
     if ([EAGLContext currentContext] == context)
         [EAGLContext setCurrentContext:nil];
-    
+    [_resourceManager dealloc];
     [_director dealloc];
     [context release];
     

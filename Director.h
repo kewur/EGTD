@@ -15,7 +15,8 @@
 
 @interface Director : NSObject {
     
-
+	// Currently bound texture name
+	GLuint currentlyBoundTexture;
 	// Current game state
 	GLuint currentGameState;
 	// Current scene
@@ -29,7 +30,7 @@
     
 
 }
-
+@property (nonatomic, assign) GLuint currentlyBoundTexture;
 @property (nonatomic, assign) GLuint currentGameState;
 @property (nonatomic, retain) AbstractScene *currentScene;
 @property (nonatomic, assign) GLfloat globalAlpha;

@@ -28,6 +28,11 @@
     ConnectedSFS = false;
 
     self.window.rootViewController = self.viewController;
+    
+    
+    self.viewController = [[EG_TDViewController alloc] initWithNibName:@"EG_TDViewController" bundle:nil];
+    [self.window.rootViewController presentModalViewController:self.viewController animated:YES];
+
     return YES;
 }
 
@@ -50,13 +55,12 @@
     
     if (![facebook isSessionValid]) {
         [facebook authorize:permissions];
+
     }
  
     
-    
     self.viewController = [[EG_TDViewController alloc] initWithNibName:@"EG_TDViewController" bundle:nil];
     [self.window.rootViewController presentModalViewController:self.viewController animated:YES];
-    
     
 }
 
