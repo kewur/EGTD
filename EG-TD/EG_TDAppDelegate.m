@@ -20,21 +20,21 @@
 
 @synthesize facebook;
 
-@synthesize viewController=_viewController;
+@synthesize viewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
     ConnectedSFS = false;
-    
-    
-    
+
     self.window.rootViewController = self.viewController;
     return YES;
 }
 
 -(void) ConnectToFB
 {
+
+    
     facebook = [[Facebook alloc] initWithAppId:@"144988148933060" andDelegate:self];
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -51,15 +51,22 @@
     if (![facebook isSessionValid]) {
         [facebook authorize:permissions];
     }
+ 
+    
+    
+    self.viewController = [[EG_TDViewController alloc] initWithNibName:@"EG_TDViewController" bundle:nil];
+    [self.window.rootViewController presentModalViewController:self.viewController animated:YES];
+    
     
 }
 
 - (void)fbDidLogin {
-    
+   
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:[facebook accessToken] forKey:@"FBAccessTokenKey"];
     [defaults setObject:[facebook expirationDate] forKey:@"FBExpirationDateKey"];
     [defaults synchronize];
+
 }
 
 -(void) onObjectReceived:(INFSmartFoxSFSEvent *)evt
@@ -69,13 +76,14 @@
     
     
     
+    
 }
 
 
 -(void) onJoinRoom:(INFSmartFoxSFSEvent *)evt
 {
     
-    [self->_viewController RoomVariableAction:[self->mRoom getVariables]];
+    //[self->_viewController RoomVariableAction:[self->mRoom getVariables]];
     
     
     
@@ -173,7 +181,7 @@
 - (void)dealloc
 {
     [_window release];
-    [_viewController release];
+    //[_viewController release];
     [super dealloc];
 }
 

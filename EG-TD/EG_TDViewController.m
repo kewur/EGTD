@@ -38,10 +38,10 @@
 
 @synthesize animating, context, displayLink;
 
-- (void)awakeFromNib
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    NSLog(@"11");
 
+   
    // EAGLContext *aContext = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
     
     //To work on iPhone 3G we must make it opengl ES version 1 
@@ -86,7 +86,7 @@
     [_director setCurrentSceneToSceneWithKey:@"game"];
     [[_director currentScene] setSceneState:kSceneState_Idle];
     
-    
+    return self;
 }
 
 - (void)dealloc
