@@ -40,18 +40,26 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     if ([defaults objectForKey:@"FBAccessTokenKey"] 
         && [defaults objectForKey:@"FBExpirationDateKey"]) {
+        
         facebook.accessToken = [defaults objectForKey:@"FBAccessTokenKey"];
         facebook.expirationDate = [defaults objectForKey:@"FBExpirationDateKey"];
     }
+    
     NSArray* permissions =  [[NSArray arrayWithObjects:
-                              @"email", @"read_stream", nil] retain];
+                              @"email", @"user_about_me", nil] retain];
     
     if (![facebook isSessionValid]) {
-        [facebook authorize:permissions]; //  delegate:self] sildim
+        [facebook authorize:permissions];
     }
     
-    [permissions release];
+}
+
+- (void)fbDidLogin {
     
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:[facebook accessToken] forKey:@"FBAccessTokenKey"];
+    [defaults setObject:[facebook expirationDate] forKey:@"FBExpirationDateKey"];
+    [defaults synchronize];
 }
 
 -(void) onObjectReceived:(INFSmartFoxSFSEvent *)evt
@@ -167,6 +175,16 @@
     [_window release];
     [_viewController release];
     [super dealloc];
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    return [facebook handleOpenURL:url]; 
+}
+
+// For 4.2+ support
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    return [facebook handleOpenURL:url]; 
 }
 
 @end

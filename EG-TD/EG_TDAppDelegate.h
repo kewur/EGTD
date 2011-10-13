@@ -17,6 +17,7 @@
 
 //osman
 @class EG_TDViewController;
+@class MenuViewController;
 
 @interface EG_TDAppDelegate : NSObject <UIApplicationDelegate, INFSmartFoxISFSEvents, FBSessionDelegate> // 
 {
