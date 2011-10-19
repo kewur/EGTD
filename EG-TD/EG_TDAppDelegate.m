@@ -31,7 +31,7 @@
     
     
     self.viewController = [[EG_TDViewController alloc] initWithNibName:@"EG_TDViewController" bundle:nil];
-    [self.window.rootViewController presentModalViewController:self.viewController animated:YES];
+   // [self.window.rootViewController presentModalViewController:self.viewController animated:YES];
 
     return YES;
 }
@@ -39,7 +39,7 @@
 -(void) ConnectToFB
 {
 
-    
+   
     facebook = [[Facebook alloc] initWithAppId:@"144988148933060" andDelegate:self];
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -54,13 +54,19 @@
                               @"email", @"user_about_me", nil] retain];
     
     if (![facebook isSessionValid]) {
+        
         [facebook authorize:permissions];
-
+        
+        
+        
     }
  
     
-    self.viewController = [[EG_TDViewController alloc] initWithNibName:@"EG_TDViewController" bundle:nil];
-    [self.window.rootViewController presentModalViewController:self.viewController animated:YES];
+    else
+    {
+        [self.window.rootViewController presentModalViewController:self.viewController animated:YES];
+    }
+    
     
 }
 
@@ -70,6 +76,8 @@
     [defaults setObject:[facebook accessToken] forKey:@"FBAccessTokenKey"];
     [defaults setObject:[facebook expirationDate] forKey:@"FBExpirationDateKey"];
     [defaults synchronize];
+    
+    [self.window.rootViewController presentModalViewController:self.viewController animated:YES];
 
 }
 
