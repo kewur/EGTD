@@ -62,7 +62,7 @@
     
 	_location = [touch locationInView:aView];
     
-    NSLog(@"location X : %f  location Y : %f ", _location.x, _location.y);
+   // NSLog(@"location X : %f  location Y : %f ", _location.x, _location.y);
     
     if (_location.x > 300)
     {

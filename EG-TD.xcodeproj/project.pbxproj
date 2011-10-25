@@ -19,7 +19,10 @@
 		2E7561EB1447987200956F6E /* ResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7561EA1447987200956F6E /* ResourceManager.m */; };
 		2E7561F41447A35800956F6E /* towerMenuBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E7561F21447A35800956F6E /* towerMenuBackground.png */; };
 		2E7561F51447A35800956F6E /* towerMenuBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E7561F31447A35800956F6E /* towerMenuBackground@2x.png */; };
-		2E7561F71447A6FA00956F6E /* joypad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E7561F61447A6FA00956F6E /* joypad.png */; };
+		2EF252081456EE0800943C9C /* china.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF252041456EE0800943C9C /* china.png */; };
+		2EF252091456EE0800943C9C /* china@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF252051456EE0800943C9C /* china@2x.png */; };
+		2EF2520A1456EE0800943C9C /* france.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF252061456EE0800943C9C /* france.png */; };
+		2EF2520B1456EE0800943C9C /* france@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF252071456EE0800943C9C /* france@2x.png */; };
 		2EF32C7C1440C2DB00A85CF1 /* OpenGLTexture3D.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF32C7A1440C2DB00A85CF1 /* OpenGLTexture3D.m */; };
 		3BA212E01422F403003CF839 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA212DF1422F403003CF839 /* UIKit.framework */; };
 		3BA212E21422F403003CF839 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA212E11422F403003CF839 /* Foundation.framework */; };
@@ -122,7 +125,10 @@
 		2E7561EA1447987200956F6E /* ResourceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceManager.m; sourceTree = "<group>"; };
 		2E7561F21447A35800956F6E /* towerMenuBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = towerMenuBackground.png; sourceTree = "<group>"; };
 		2E7561F31447A35800956F6E /* towerMenuBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "towerMenuBackground@2x.png"; sourceTree = "<group>"; };
-		2E7561F61447A6FA00956F6E /* joypad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joypad.png; sourceTree = "<group>"; };
+		2EF252041456EE0800943C9C /* china.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = china.png; sourceTree = "<group>"; };
+		2EF252051456EE0800943C9C /* china@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "china@2x.png"; sourceTree = "<group>"; };
+		2EF252061456EE0800943C9C /* france.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = france.png; sourceTree = "<group>"; };
+		2EF252071456EE0800943C9C /* france@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "france@2x.png"; sourceTree = "<group>"; };
 		2EF32C7A1440C2DB00A85CF1 /* OpenGLTexture3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLTexture3D.m; sourceTree = "<group>"; };
 		2EF32C7B1440C2DB00A85CF1 /* OpenGLTexture3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLTexture3D.h; sourceTree = "<group>"; };
 		3BA212DB1422F402003CF839 /* EG-TD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EG-TD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -350,7 +356,7 @@
 		2E7561ED14479DB500956F6E /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				2E7561F61447A6FA00956F6E /* joypad.png */,
+				2EF252031456EDF800943C9C /* mini towers */,
 				2E7561F21447A35800956F6E /* towerMenuBackground.png */,
 				2E7561F31447A35800956F6E /* towerMenuBackground@2x.png */,
 			);
@@ -363,6 +369,17 @@
 				2E25771014404DF600A3CB95 /* CommonOpenGL.h */,
 			);
 			name = "Common Files";
+			sourceTree = "<group>";
+		};
+		2EF252031456EDF800943C9C /* mini towers */ = {
+			isa = PBXGroup;
+			children = (
+				2EF252041456EE0800943C9C /* china.png */,
+				2EF252051456EE0800943C9C /* china@2x.png */,
+				2EF252061456EE0800943C9C /* france.png */,
+				2EF252071456EE0800943C9C /* france@2x.png */,
+			);
+			name = "mini towers";
 			sourceTree = "<group>";
 		};
 		2EF32C791440C2C300A85CF1 /* OpenGL ES Support */ = {
@@ -776,7 +793,10 @@
 				3BB70EC01442F76D00E51BD0 /* FBDialog.bundle in Resources */,
 				2E7561F41447A35800956F6E /* towerMenuBackground.png in Resources */,
 				2E7561F51447A35800956F6E /* towerMenuBackground@2x.png in Resources */,
-				2E7561F71447A6FA00956F6E /* joypad.png in Resources */,
+				2EF252081456EE0800943C9C /* china.png in Resources */,
+				2EF252091456EE0800943C9C /* china@2x.png in Resources */,
+				2EF2520A1456EE0800943C9C /* france.png in Resources */,
+				2EF2520B1456EE0800943C9C /* france@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

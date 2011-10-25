@@ -18,9 +18,12 @@
     Director *_sharedDirector;
     
     Image *backgroundView;
+    Image *chinaTower;
+    NSMutableArray *miniTowers;
 }
 
 @property (nonatomic, readonly) float touched;
+@property (nonatomic, retain) NSMutableArray *miniTowers;
 
 // Selector that updates the entities logic i.e. location, collision status etc
 - (void)update:(GLfloat)delta;

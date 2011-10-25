@@ -121,7 +121,7 @@
         
         glViewport(0, 0, framebufferWidth, framebufferHeight);
         
-       // NSLog(@"2");
+      
     }
 }
 
