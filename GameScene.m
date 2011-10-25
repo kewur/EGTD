@@ -18,6 +18,7 @@
 @synthesize _location;
 @synthesize towerMenu;
 @synthesize touched;
+@synthesize miniTowerTouched;
 - (id)init {
 	
 	if(self == [super init]) {
@@ -36,6 +37,9 @@
         xDifference = 0;
         yDifference = 0;
         touched = 0;
+        miniTowerTouched = 0;
+        miniTower = CGRectMake(240, 0, 80, 80);
+        
 
         
 
@@ -61,8 +65,17 @@
           
     
     UITouch *touch = [[event touchesForView:aView] anyObject];
-    
+
 	_location = [touch locationInView:aView];
+
+    
+    if (CGRectContainsPoint(miniTower, _location) && touched == 1)
+    {
+        NSLog(@"mini tower touched");
+        
+        miniTowerHash = [touch hash];
+        miniTowerTouched = 1;
+    }
     
    // NSLog(@"location X : %f  location Y : %f ", _location.x, _location.y);
     
@@ -70,7 +83,7 @@
     {
         touched = 1;
     }
-    else
+    else if(miniTowerTouched !=1)
     {
         touched = 0;
     }
@@ -81,17 +94,27 @@
 
 - (void)updateWithTouchLocationMoved:(NSSet*)touches withEvent:(UIEvent*)event view:(UIView*)aView {
 
-    if (!touched)
+    UITouch *touch = [[event touchesForView:aView] anyObject];
+
+    if ([touch hash] == miniTowerHash)
     {
-        UITouch *touch = [[event touchesForView:aView] anyObject];
+        
+    
+    
+    
+    }
+    
+    if (!touched && miniTowerTouched != 1)
+    {
+      //  UITouch *touch = [[event touchesForView:aView] anyObject];
         CGPoint _nextLocation;
         _nextLocation = [touch locationInView:aView];
         
         xDifference = _nextLocation.x-_location.x;
         yDifference = _nextLocation.y-_location.y;
         
-        NSLog(@"XDIFFERENCE %f",xDifference);
-        NSLog(@"YDIFFERENCE %f",yDifference);
+        //NSLog(@"X DIFFERENCE %f",xDifference);
+        //NSLog(@"Y DIFFERENCE %f",yDifference);
     } 
 
 
@@ -100,6 +123,13 @@
  
     xDifference *= 0.5;
     yDifference *= 0.5;
+
+    
+    if(miniTowerTouched == 1 )
+    {
+        touched = 0;
+        miniTowerTouched = 0;
+    }
     
 }
 
@@ -113,7 +143,7 @@
     [gameMap render];
     [gameCamera render];
     [towerMenu render];
-    
+
 }
 
 

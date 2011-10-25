@@ -28,9 +28,15 @@
     NSString *levelCondition;
     ///Temporary
     AngelCodeFont *font1;
+    
+    Image *miniTowerBack;
+    Image *miniTowerBackSelected;
+    
+    float selected;
 }
 
 @property (nonatomic, readonly) float touched;
+@property (nonatomic, readonly) float miniTowerTouched;
 @property (nonatomic, retain) NSMutableArray *miniTowers;
 
 // Selector that updates the entities logic i.e. location, collision status etc

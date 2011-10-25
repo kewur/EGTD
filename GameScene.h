@@ -23,6 +23,14 @@
     float yDifference;
     //For tower screen whether started or not
     float touched;
+    
+    //Mini Tower Selected check
+    float miniTowerTouched;
+    CGRect miniTower;
+    int miniTowerHash;
+    
+    
+    
     CGPoint _location;
    
 }
@@ -34,6 +42,7 @@
 @property (nonatomic, assign)float xDifference;
 @property (nonatomic, assign)float yDifference;
 @property (nonatomic, assign)float touched;
+@property (nonatomic, assign)float miniTowerTouched;
 @property (nonatomic, assign)CGPoint _location;
 
 @end

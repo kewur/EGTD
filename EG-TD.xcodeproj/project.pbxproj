@@ -25,6 +25,9 @@
 		2EC06BCA145721BF00DF53D3 /* font1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EC06BC8145721BF00DF53D3 /* font1.png */; };
 		2EC06BCD1457253400DF53D3 /* test1.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 2EC06BCB1457253400DF53D3 /* test1.fnt */; };
 		2EC06BCE1457253400DF53D3 /* test1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EC06BCC1457253400DF53D3 /* test1.png */; };
+		2EC06C011457629B00DF53D3 /* text.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EC06C001457629B00DF53D3 /* text.png */; };
+		2EC06C0C1457652900DF53D3 /* miniTowerBackSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EC06C0A1457652900DF53D3 /* miniTowerBackSelected.png */; };
+		2EC06C0D1457652900DF53D3 /* miniTowerBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EC06C0B1457652900DF53D3 /* miniTowerBack.png */; };
 		2EF252081456EE0800943C9C /* china.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF252041456EE0800943C9C /* china.png */; };
 		2EF252091456EE0800943C9C /* china@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF252051456EE0800943C9C /* china@2x.png */; };
 		2EF2520A1456EE0800943C9C /* france.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF252061456EE0800943C9C /* france.png */; };
@@ -143,6 +146,10 @@
 		2EC06BC8145721BF00DF53D3 /* font1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = font1.png; sourceTree = "<group>"; };
 		2EC06BCB1457253400DF53D3 /* test1.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test1.fnt; sourceTree = "<group>"; };
 		2EC06BCC1457253400DF53D3 /* test1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test1.png; sourceTree = "<group>"; };
+		2EC06BFF14575D6200DF53D3 /* tower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tower.h; sourceTree = "<group>"; };
+		2EC06C001457629B00DF53D3 /* text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = text.png; sourceTree = "<group>"; };
+		2EC06C0A1457652900DF53D3 /* miniTowerBackSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = miniTowerBackSelected.png; sourceTree = "<group>"; };
+		2EC06C0B1457652900DF53D3 /* miniTowerBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = miniTowerBack.png; sourceTree = "<group>"; };
 		2EF252041456EE0800943C9C /* china.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = china.png; sourceTree = "<group>"; };
 		2EF252051456EE0800943C9C /* china@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "china@2x.png"; sourceTree = "<group>"; };
 		2EF252061456EE0800943C9C /* france.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = france.png; sourceTree = "<group>"; };
@@ -379,11 +386,11 @@
 		2E7561ED14479DB500956F6E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2EF252031456EDF800943C9C /* mini towers */,
 				2EF2523E14570D9200943C9C /* turn.png */,
 				2EF2523F14570D9200943C9C /* turn@2x.png */,
 				2EF2523A14570D8D00943C9C /* coin.png */,
 				2EF2523B14570D8D00943C9C /* coin@2x.png */,
-				2EF252031456EDF800943C9C /* mini towers */,
 				2E7561F21447A35800956F6E /* towerMenuBackground.png */,
 				2E7561F31447A35800956F6E /* towerMenuBackground@2x.png */,
 			);
@@ -445,6 +452,10 @@
 		3BA212D01422F402003CF839 = {
 			isa = PBXGroup;
 			children = (
+				2EC06C0A1457652900DF53D3 /* miniTowerBackSelected.png */,
+				2EC06C0B1457652900DF53D3 /* miniTowerBack.png */,
+				2EC06C001457629B00DF53D3 /* text.png */,
+				2EC06BFF14575D6200DF53D3 /* tower.h */,
 				2EC06BC214571E9200DF53D3 /* Fonts */,
 				3BA212E91422F403003CF839 /* EG-TD */,
 				3BB70E9D1442F70700E51BD0 /* libsqlite3.dylib */,
@@ -855,6 +866,9 @@
 				2EC06BCA145721BF00DF53D3 /* font1.png in Resources */,
 				2EC06BCD1457253400DF53D3 /* test1.fnt in Resources */,
 				2EC06BCE1457253400DF53D3 /* test1.png in Resources */,
+				2EC06C011457629B00DF53D3 /* text.png in Resources */,
+				2EC06C0C1457652900DF53D3 /* miniTowerBackSelected.png in Resources */,
+				2EC06C0D1457652900DF53D3 /* miniTowerBack.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

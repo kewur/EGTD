@@ -12,6 +12,7 @@
 @implementation TowerMenu
 
 @synthesize touched;
+@synthesize miniTowerTouched;
 @synthesize miniTowers;
 - (id)init {
 	self = [super init];
@@ -22,6 +23,9 @@
         
         coin = [(Image*)[Image alloc] initWithImage:@"coin.png"];
         turn = [(Image*)[Image alloc] initWithImage:@"turn.png"];
+        
+        miniTowerBack = [(Image*)[Image alloc] initWithImage:@"miniTowerBack.png"];
+        miniTowerBackSelected = [(Image*)[Image alloc] initWithImage:@"miniTowerBackSelected.png"];
       
         font1 = [[AngelCodeFont alloc] initWithFontImageNamed:@"font1.png" controlFile:@"font1" scale:0.8 filter:GL_LINEAR];
         
@@ -49,7 +53,8 @@
 - (void)update:(GLfloat)delta {
 	
    touched = [(GameScene*)[_sharedDirector currentScene]  touched];
- 
+   miniTowerTouched = [(GameScene*)[_sharedDirector currentScene]  miniTowerTouched];
+    
 }
 
 
@@ -81,14 +86,23 @@
     glDisable(GL_DEPTH_TEST);
     [backgroundView setRotation:90];
     [backgroundView renderAtPoint:CGPointMake(z, 240) centerOfImage:YES];  
-    glPushMatrix();
-
+ 
     [font1 drawStringAt:CGPointMake(z-136.5, 415) text:moneyCondition];
     [font1 drawStringAt:CGPointMake(z-124, 355) text:levelCondition];
-    glPopMatrix();
+ 
     [coin setRotation:90];
     [coin renderAtPoint:CGPointMake(z-73, 470) centerOfImage:YES];
   
+    if(miniTowerTouched == 0)
+    {
+        [miniTowerBack setRotation:90];
+        [miniTowerBack renderAtPoint:CGPointMake(z+45, 440) centerOfImage:YES];
+    }
+    else
+    {
+        [miniTowerBackSelected setRotation:90];
+        [miniTowerBackSelected renderAtPoint:CGPointMake(z+45, 440) centerOfImage:YES];
+    }
     [turn  setRotation:90];
     [turn renderAtPoint:CGPointMake(z-73, 400) centerOfImage:YES];
     // ------------------------------------------------
@@ -98,7 +112,7 @@
     for (int i = 0 ; i<[miniTowers count]; i++)
     {
         [[miniTowers objectAtIndex:i] setRotation:90];
-        [[miniTowers objectAtIndex:i] renderAtPoint:CGPointMake(z+50, 450-j) centerOfImage:YES];
+        [[miniTowers objectAtIndex:i] renderAtPoint:CGPointMake(z+50, 440-j) centerOfImage:YES];
         j+=60;
     }
 
