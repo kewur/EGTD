@@ -37,6 +37,8 @@
         yDifference = 0;
         touched = 0;
 
+        
+
     }
 	
 	return self;
@@ -87,9 +89,18 @@
         
         xDifference = _nextLocation.x-_location.x;
         yDifference = _nextLocation.y-_location.y;
+        
+        NSLog(@"XDIFFERENCE %f",xDifference);
+        NSLog(@"YDIFFERENCE %f",yDifference);
     } 
 
 
+}
+- (void)updateWithTouchLocationEnded:(NSSet*)touches withEvent:(UIEvent*)event view:(UIView*)aView {
+ 
+    xDifference *= 0.5;
+    yDifference *= 0.5;
+    
 }
 
 
@@ -98,10 +109,10 @@
 
 - (void)render {
   
+    
     [gameMap render];
     [gameCamera render];
     [towerMenu render];
-
     
 }
 

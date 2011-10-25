@@ -19,7 +19,15 @@
         _sharedDirector = [Director sharedDirector];
         touched = 0;
         backgroundView = [(Image*)[Image alloc] initWithImage:@"towerMenuBackground.png"];
-  
+        
+        coin = [(Image*)[Image alloc] initWithImage:@"coin.png"];
+        turn = [(Image*)[Image alloc] initWithImage:@"turn.png"];
+      
+        font1 = [[AngelCodeFont alloc] initWithFontImageNamed:@"font1.png" controlFile:@"font1" scale:0.8 filter:GL_LINEAR];
+        
+        moneyCondition = @"100";
+        levelCondition = @"16";
+
         self.miniTowers = [[NSMutableArray alloc] init];
         
         Image *miniTower = [(Image*)[Image alloc] initWithImage:@"china.png"];
@@ -47,7 +55,6 @@
 
 - (void)render {
 	
-    
     static  int z = 380;
     
     if (touched && z>230)
@@ -66,6 +73,7 @@
     // ------------------------------------------------
     // Draw HUD ---------------------------------------
     // ------------------------------------------------
+    
     glPushMatrix();
     switchToOrtho();
 
@@ -73,21 +81,37 @@
     glDisable(GL_DEPTH_TEST);
     [backgroundView setRotation:90];
     [backgroundView renderAtPoint:CGPointMake(z, 240) centerOfImage:YES];  
-    //[backgroundView renderSubImageAtPoint:CGPointMake(100, 240) offset:CGPointMake(30, 30) subImageWidth:30 subImageHeight:60 centerOfImage:YES];
- 
+    glPushMatrix();
 
+    [font1 drawStringAt:CGPointMake(z-136.5, 415) text:moneyCondition];
+    [font1 drawStringAt:CGPointMake(z-124, 355) text:levelCondition];
+    glPopMatrix();
+    [coin setRotation:90];
+    [coin renderAtPoint:CGPointMake(z-73, 470) centerOfImage:YES];
+  
+    [turn  setRotation:90];
+    [turn renderAtPoint:CGPointMake(z-73, 400) centerOfImage:YES];
+    // ------------------------------------------------
+    // Rendering Towers ---------------------------------------
+    // ------------------------------------------------
     int j = 0;
-   // int k = 0;
     for (int i = 0 ; i<[miniTowers count]; i++)
     {
         [[miniTowers objectAtIndex:i] setRotation:90];
         [[miniTowers objectAtIndex:i] renderAtPoint:CGPointMake(z+50, 450-j) centerOfImage:YES];
         j+=60;
     }
-    
+
     switchBackToFrustum();
     
     glPopMatrix();
+    
+
+}
+-(void)dealloc
+{
+    [miniTowers release];
+    [super dealloc];
 }
 
 @end

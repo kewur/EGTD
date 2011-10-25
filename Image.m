@@ -107,14 +107,14 @@
 
 
 - (void)initImplementation {
-	
+
 	_director = [Director sharedDirector];
     _resourceManager = [ResourceManager sharedResourceManager];
     
     // Try to get the texture from the resource manager.  If it does not exist it will be added to
     // the cache automatically ready for next time.
     texture = [[_resourceManager getTextureWithName:imageName] retain];
-    
+   
 	imageWidth = texture.contentSize.width;
 	imageHeight = texture.contentSize.height;
 	textureWidth = texture.pixelsWide;
@@ -390,7 +390,7 @@
 	// texture is not currently bound
     // NSLog(@"%d",[texture name]);
 	if([texture name] != [_director currentlyBoundTexture]) {
-        NSLog(@"%d",[texture name]);
+       // NSLog(@"%d",[texture name]);
 		[_director setCurrentlyBoundTexture:[texture name]];
 		glBindTexture(GL_TEXTURE_2D, [texture name]);
 	}

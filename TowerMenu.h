@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "GameScene.h"
-
+#import "AngelCodeFont.h"
 @class Image;
 
 
@@ -18,8 +18,16 @@
     Director *_sharedDirector;
     
     Image *backgroundView;
-    Image *chinaTower;
+   
     NSMutableArray *miniTowers;
+
+    ///Temporary
+    Image *coin;
+    Image *turn;
+    NSString *moneyCondition;
+    NSString *levelCondition;
+    ///Temporary
+    AngelCodeFont *font1;
 }
 
 @property (nonatomic, readonly) float touched;

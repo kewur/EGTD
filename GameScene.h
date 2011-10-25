@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "AbstractScene.h"
-
 @class Camera;
 @class TowerMenu;
 
@@ -25,7 +24,7 @@
     //For tower screen whether started or not
     float touched;
     CGPoint _location;
-
+   
 }
 
 // Provide readonly because we won't change it here
