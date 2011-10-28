@@ -64,16 +64,11 @@
     xDifference = [(GameScene*)[_sharedDirector currentScene]  xDifference];
     yDifference = [(GameScene*)[_sharedDirector currentScene]  yDifference];
     cameraX = [(GameScene*)[_sharedDirector currentScene]  touched];
-  
     
-
-    position.x -= yDifference*kMapAcceloremeter;
-    
-   // NSLog(@"DD %f",yDifference);
-   // NSLog(@"BB %f",xDifference);
-    position.z -= xDifference*kMapAcceloremeter;
-    lookUpZ -= xDifference*kMapAcceloremeter;
-    lookUpX -= yDifference*kMapAcceloremeter;
+    position.x -= xDifference*kMapAcceloremeter;
+    position.z -= yDifference*kMapAcceloremeter;
+    lookUpZ -= yDifference*kMapAcceloremeter;
+    lookUpX -= xDifference*kMapAcceloremeter;
 }
 
 #pragma mark -
@@ -85,8 +80,7 @@
 	glLoadIdentity();
     
     
-    
-    glRotatef(90, 0, 0, 1);
+ //   glRotatef(90, 0, 0, 1);
     gluLookAt(position.x, position.y, position.z, lookUpX,0 , lookUpZ, 0, 1, 0);
 
 

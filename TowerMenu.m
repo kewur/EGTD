@@ -60,19 +60,19 @@
 
 - (void)render {
 	
-    static  int z = 380;
+    static  int y = 295;
     
-    if (touched && z>230)
+    if (touched && y>145)
     {
-        z-=5;
+        y-=5;
     }
-    else if(touched && z<=230)
+    else if(touched && y<=145)
     {
-        z = 230;
+        y = 145;
     }
     else
     {
-        z = 380;
+        y = 295;
     }
     
     // ------------------------------------------------
@@ -84,26 +84,28 @@
 
    
     glDisable(GL_DEPTH_TEST);
-    [backgroundView setRotation:90];
-    [backgroundView renderAtPoint:CGPointMake(z, 240) centerOfImage:YES];  
+
+    [backgroundView renderAtPoint:CGPointMake(0, y) centerOfImage:NO];  
+    
+    
+/* 
+   // [font1 drawStringAt:CGPointMake(z-136.5, 415) text:moneyCondition];
+   // [font1 drawStringAt:CGPointMake(z-124, 355) text:levelCondition];
  
-    [font1 drawStringAt:CGPointMake(z-136.5, 415) text:moneyCondition];
-    [font1 drawStringAt:CGPointMake(z-124, 355) text:levelCondition];
- 
-    [coin setRotation:90];
+   // [coin setRotation:90];
     [coin renderAtPoint:CGPointMake(z-73, 470) centerOfImage:YES];
   
     if(miniTowerTouched == 0)
     {
-        [miniTowerBack setRotation:90];
+   //     [miniTowerBack setRotation:90];
         [miniTowerBack renderAtPoint:CGPointMake(z+45, 440) centerOfImage:YES];
     }
     else
     {
-        [miniTowerBackSelected setRotation:90];
+    //    [miniTowerBackSelected setRotation:90];
         [miniTowerBackSelected renderAtPoint:CGPointMake(z+45, 440) centerOfImage:YES];
     }
-    [turn  setRotation:90];
+   // [turn  setRotation:90];
     [turn renderAtPoint:CGPointMake(z-73, 400) centerOfImage:YES];
     // ------------------------------------------------
     // Rendering Towers ---------------------------------------
@@ -111,11 +113,11 @@
     int j = 0;
     for (int i = 0 ; i<[miniTowers count]; i++)
     {
-        [[miniTowers objectAtIndex:i] setRotation:90];
+      //  [[miniTowers objectAtIndex:i] setRotation:90];
         [[miniTowers objectAtIndex:i] renderAtPoint:CGPointMake(z+50, 440-j) centerOfImage:YES];
         j+=60;
     }
-
+*/
     switchBackToFrustum();
     
     glPopMatrix();

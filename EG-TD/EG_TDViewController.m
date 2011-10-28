@@ -308,5 +308,12 @@
 	[[_director currentScene] updateWithTouchLocationEnded:touches withEvent:event view:(EAGLView *)self.view];
 }
 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    
+    // Return YES for supported orientations
+    return (interfaceOrientation == UIInterfaceOrientationLandscapeRight);
+}
+
 
 @end

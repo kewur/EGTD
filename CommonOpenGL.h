@@ -44,11 +44,14 @@ enum {
 	kGameState_Running,
 	kGameState_Paused,
 	kGameState_Loading,
+    kGameState_towerMenuActive,
+    kGameState_gameActive,
 	kSceneState_Idle,
 	//kSceneState_TransitionIn,
 	//kSceneState_TransitionOut,
 	kSceneState_Running,
 	kSceneState_Paused
+    
 };
 
 
@@ -269,12 +272,12 @@ static inline void gluLookAt(GLfloat eyex, GLfloat eyey, GLfloat eyez,
 static inline void switchToOrtho ()
 {
    CGRect bounds=  [[UIScreen mainScreen] bounds];
-    
+//    NSLog(@"%f",bounds.size.width);
     glDisable(GL_DEPTH_TEST);
     glMatrixMode(GL_PROJECTION);
     glPushMatrix();
     glLoadIdentity();
-    glOrthof(0, bounds.size.width, 0, bounds.size.height, -5, 1);       
+    glOrthof(0, bounds.size.height, 0,bounds.size.width , -5, 1);       
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
 }

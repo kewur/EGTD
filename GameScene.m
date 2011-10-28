@@ -29,11 +29,9 @@
         gameMap = [[Map3D alloc] initMap3D];
         towerMenu = [[TowerMenu alloc] init];
       
-        //Cameras first position x = 0 y = -20 z = 40
-        //Y is decreasing to up dont switch y
-        //X is increasing with LEFT not right
-        //Z is decreasing with forward
-        gameCamera = [[Camera alloc] initWithTileLocation:Vector3fMake(0,-20,40)];
+        //NORMAL CAMERA GAME COORDINATE SYSTEM
+        
+        gameCamera = [[Camera alloc] initWithTileLocation:Vector3fMake(0,30,-40)];
         xDifference = 0;
         yDifference = 0;
         touched = 0;
@@ -76,10 +74,12 @@
         miniTowerHash = [touch hash];
         miniTowerTouched = 1;
     }
+   
+     CGPoint tt = [self unProject:_location];
+   //  NSLog(@"location X : %f  location Y : %f ", tt.x, tt.y);
+  //  NSLog(@"location X : %f  location Y : %f ", _location.x, _location.y);
     
-   // NSLog(@"location X : %f  location Y : %f ", _location.x, _location.y);
-    
-    if (_location.x > 300)
+    if (_location.y < 30)
     {
         touched = 1;
     }
@@ -87,6 +87,9 @@
     {
         touched = 0;
     }
+    
+    xDifference = 0;
+    yDifference = 0;
 
     
 }
@@ -112,17 +115,15 @@
         
         xDifference = _nextLocation.x-_location.x;
         yDifference = _nextLocation.y-_location.y;
-        
-        //NSLog(@"X DIFFERENCE %f",xDifference);
-        //NSLog(@"Y DIFFERENCE %f",yDifference);
+
     } 
 
 
 }
 - (void)updateWithTouchLocationEnded:(NSSet*)touches withEvent:(UIEvent*)event view:(UIView*)aView {
  
-    xDifference *= 0.5;
-    yDifference *= 0.5;
+//    xDifference *= 0.5;
+ //   yDifference *= 0.5;
 
     
     if(miniTowerTouched == 1 )
@@ -133,6 +134,74 @@
     
 }
 
+#define RAY_ITERATIONS  100
+- (CGPoint) unProject: (CGPoint) point
+{
+    
+    GLfloat x=0, y=0, z=0;
+    GLfloat modelMatrix[16]; 
+    GLfloat projMatrix[16];
+    GLint viewport[4];
+    glGetFloatv(GL_MODELVIEW_MATRIX, modelMatrix);
+    glGetFloatv(GL_PROJECTION_MATRIX, projMatrix);
+    glGetIntegerv(GL_VIEWPORT, viewport);
+
+
+   
+    point.y = viewport[3] - point.y;
+ 
+ //  NSLog(@"location X : %f  location Y : %f ", point.x, point.y);
+    EGVertex3D far3d;
+    EGVertex3D near3d;
+    EGVertex3D rayVector3d;
+
+    //Retreiving position projected on near plan
+   	gluUnProject( point.x, point.y , 0, modelMatrix, projMatrix, viewport, &near3d.x, &near3d.y, &near3d.z);
+    
+	//Retreiving position projected on far plan
+	gluUnProject( point.x, point.y,  1, modelMatrix, projMatrix, viewport, &far3d.x, &far3d.y, &far3d.z);
+    
+    rayVector3d.x = (far3d.x - near3d.x);
+	rayVector3d.y = (far3d.y - near3d.y);
+	rayVector3d.z = (far3d.z - near3d.z);
+
+  //  NSLog(@"RAY X : %f  location Y : %f  location Z : %f", rayVector3d.x, rayVector3d.y,rayVector3d.z);
+   // rayVector3d.x =  near3d.x;
+	//rayVector3d.y =  near3d.y;
+	//rayVector3d.z =  near3d.z;
+    
+    float rayLength = sqrtf(rayVector3d.x*rayVector3d.x + rayVector3d.y*rayVector3d.y + rayVector3d.z*rayVector3d.z);
+    NSLog(@"NEAR X : %f  location Y : %f  location Z : %f", near3d.x, near3d.y,near3d.z);
+   // NSLog(@"RAY X : %f  location Y : %f  location Z : %f", far3d.x, far3d.y,far3d.z);
+    
+    rayVector3d.x /= rayLength;
+	rayVector3d.y /= rayLength;
+	rayVector3d.z /= rayLength;
+
+
+      
+
+  // NSLog(@"RAY X : %f  location Y : %f  location Z : %f", rayVector3d.x, rayVector3d.y,rayVector3d.z);
+    CGPoint result = { 0.0f/0.0f, 0.0f/0.0f };
+
+    EGVertex3D collisionPoint;
+    //Iterating over ray vector to check collisions
+	for(int i = 0; i < RAY_ITERATIONS; i++)
+	{
+//		collisionPoint.x = rayVector3d.x * rayLength/RAY_ITERATIONS*i;
+//		collisionPoint.y = rayVector3d.y * rayLength/RAY_ITERATIONS*i;
+//		collisionPoint.z = rayVector3d.z * rayLength/RAY_ITERATIONS*i;
+        
+        collisionPoint.x = near3d.x + rayVector3d.x*i;
+        collisionPoint.y = near3d.y + rayVector3d.y*i;
+		collisionPoint.z = near3d.z + rayVector3d.z*i;
+        
+        
+        //Checking collision 
+         NSLog(@"RAY X : %f  location Y : %f  location Z : %f", collisionPoint.x, collisionPoint.y,collisionPoint.z);
+	}
+  //  return result;
+}
 
 #pragma mark -
 #pragma mark Render scene

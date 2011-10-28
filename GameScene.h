@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "AbstractScene.h"
+#import "glu.h"
+
 @class Camera;
 @class TowerMenu;
 
@@ -44,5 +46,7 @@
 @property (nonatomic, assign)float touched;
 @property (nonatomic, assign)float miniTowerTouched;
 @property (nonatomic, assign)CGPoint _location;
+
+- (CGPoint) unProject: (CGPoint) point;
 
 @end

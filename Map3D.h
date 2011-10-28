@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Director.h"
 
+
 @interface Map3D : NSObject {
     
     
@@ -22,7 +23,11 @@
     // Floor Vertices
     EGVertex3D zFloorVertices[81];
     EGVertex3D xFloorVertices[81];
+    
+ 
 }
+
+
 
 @property (nonatomic, readonly) GLuint mapWidth;
 @property (nonatomic, readonly) GLuint mapHeight;

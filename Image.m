@@ -114,7 +114,7 @@
     // Try to get the texture from the resource manager.  If it does not exist it will be added to
     // the cache automatically ready for next time.
     texture = [[_resourceManager getTextureWithName:imageName] retain];
-   
+  
 	imageWidth = texture.contentSize.width;
 	imageHeight = texture.contentSize.height;
 	textureWidth = texture.pixelsWide;
@@ -293,6 +293,10 @@
 	
 	// Calculate the width and the height of the quad using the current image scale and the width and height
 	// of the image we are going to render
+    
+   // NSLog(@"%d %d",aSubImageWidth,aSubImageHeight);
+    
+    
 	double quadWidth = aSubImageWidth * scale;
 	double quadHeight = aSubImageHeight * scale;
 	
@@ -369,6 +373,7 @@
 	glPushMatrix();
 	
 	// Rotate around the Z axis by the angle defined for this image
+   
     glTranslatef(point.x, point.y, 0);
 	glRotatef(-rotation, 0.0f, 0.0f, 1.0f);
 	glTranslatef(-point.x, -point.y, 0);
