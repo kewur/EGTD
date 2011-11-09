@@ -38,7 +38,7 @@
 
 -(void) ConnectToFB
 {
-
+    
    
     facebook = [[Facebook alloc] initWithAppId:@"144988148933060" andDelegate:self];
     
@@ -60,7 +60,7 @@
         
         
     }
- 
+   
     
     else
     {
@@ -86,8 +86,7 @@
     
     NSLog(@"Object received");
     
-    
-    
+
     
 }
 
