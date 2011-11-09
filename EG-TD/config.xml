@@ -1,6 +1,6 @@
 <SmartFoxTrisConfig>
     
-    <ip>127.0.0.1</ip>
+    <ip>178.79.129.10</ip>
     
     <port>9339</port>
     
@@ -14,6 +14,6 @@
     
     <httpPollSpeed>750</httpPollSpeed>
     
-    <zone>towerDefence</zone>
+    <zone>egtd</zone>
     
 </SmartFoxTrisConfig>

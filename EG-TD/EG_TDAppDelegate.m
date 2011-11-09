@@ -59,11 +59,12 @@
         
         
         
-    }
+    } 
    
     
     else
-    {
+    {   
+        [self ConnectToSFS:@"1"];
         [self.window.rootViewController presentModalViewController:self.viewController animated:YES];
     }
     
@@ -76,7 +77,7 @@
     [defaults setObject:[facebook accessToken] forKey:@"FBAccessTokenKey"];
     [defaults setObject:[facebook expirationDate] forKey:@"FBExpirationDateKey"];
     [defaults synchronize];
-    
+    [self ConnectToSFS:@"1"];
     [self.window.rootViewController presentModalViewController:self.viewController animated:YES];
 
 }
@@ -94,7 +95,7 @@
 -(void) onJoinRoom:(INFSmartFoxSFSEvent *)evt
 {
     
-    //[self->_viewController RoomVariableAction:[self->mRoom getVariables]];
+    NSLog(@"Room joined");
     
     
     
@@ -116,7 +117,7 @@
     
     if ([[evt.params objectForKey:@"success"] boolValue])
     {
-        
+        NSLog(@"Logged in");
     }
     
     else
