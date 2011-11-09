@@ -65,6 +65,7 @@
     else
     {   
         [self ConnectToSFS:@"1"];
+        //
         [self.window.rootViewController presentModalViewController:self.viewController animated:YES];
     }
     
